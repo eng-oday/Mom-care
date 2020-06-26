@@ -1,0 +1,1813 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		035F8D8A246FE91600CE553E /* SaveDrDetailsVC+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035F8D89246FE91600CE553E /* SaveDrDetailsVC+Extension.swift */; };
+		039E4A02247023BC0085B5AD /* SavedImages+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039E4A01247023BC0085B5AD /* SavedImages+Extension.swift */; };
+		440249CB242FB902007221F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440249CA242FB902007221F5 /* AppDelegate.swift */; };
+		440249CD242FB902007221F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440249CC242FB902007221F5 /* SceneDelegate.swift */; };
+		440249D4242FB904007221F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 440249D3242FB904007221F5 /* Assets.xcassets */; };
+		440249D7242FB904007221F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 440249D5242FB904007221F5 /* LaunchScreen.storyboard */; };
+		440249ED242FBB70007221F5 /* Cairo-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 440249E7242FBB70007221F5 /* Cairo-Black.ttf */; };
+		440249EE242FBB70007221F5 /* Cairo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 440249E8242FBB70007221F5 /* Cairo-Light.ttf */; };
+		440249EF242FBB70007221F5 /* Cairo-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 440249E9242FBB70007221F5 /* Cairo-ExtraLight.ttf */; };
+		440249F0242FBB70007221F5 /* Cairo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 440249EA242FBB70007221F5 /* Cairo-Regular.ttf */; };
+		440249F1242FBB70007221F5 /* Cairo-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 440249EB242FBB70007221F5 /* Cairo-SemiBold.ttf */; };
+		440249F2242FBB70007221F5 /* Cairo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 440249EC242FBB70007221F5 /* Cairo-Bold.ttf */; };
+		440249F4242FBC15007221F5 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440249F3242FBC15007221F5 /* Helper.swift */; };
+		440249F6242FBC1F007221F5 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440249F5242FBC1F007221F5 /* Config.swift */; };
+		440249F8242FBC33007221F5 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440249F7242FBC33007221F5 /* API.swift */; };
+		440249FA242FBCCC007221F5 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440249F9242FBCCC007221F5 /* CircleView.swift */; };
+		440249FC242FBCEE007221F5 /* CustomTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440249FB242FBCEE007221F5 /* CustomTextFields.swift */; };
+		440249FE242FBD01007221F5 /* CustomLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440249FD242FBD01007221F5 /* CustomLabels.swift */; };
+		44024A00242FBD13007221F5 /* CustomButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440249FF242FBD13007221F5 /* CustomButtons.swift */; };
+		44024A06242FBDD5007221F5 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44024A05242FBDD5007221F5 /* Storyboard.swift */; };
+		44024A08242FBDE9007221F5 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44024A07242FBDE9007221F5 /* Language.swift */; };
+		44024A0A242FBDF4007221F5 /* Localizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44024A09242FBDF4007221F5 /* Localizer.swift */; };
+		44024A0C242FBDFE007221F5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44024A0B242FBDFE007221F5 /* Extensions.swift */; };
+		44024A21242FC276007221F5 /* FirstPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44024A1F242FC276007221F5 /* FirstPC.swift */; };
+		44024A22242FC276007221F5 /* StartVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44024A20242FC276007221F5 /* StartVC.xib */; };
+		440A2B512460AB7100EA182C /* BabyNutritionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 440A2B502460AB7100EA182C /* BabyNutritionVC.xib */; };
+		440A2B532460AB8600EA182C /* ChildNutritionGuideVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 440A2B522460AB8600EA182C /* ChildNutritionGuideVC.xib */; };
+		440A2B552460ABB000EA182C /* BabySleepVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 440A2B542460ABB000EA182C /* BabySleepVC.xib */; };
+		440A2B572460ABBE00EA182C /* ChildPeriodVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 440A2B562460ABBE00EA182C /* ChildPeriodVC.xib */; };
+		440A2B592460ABD100EA182C /* CheckVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 440A2B582460ABD100EA182C /* CheckVC.xib */; };
+		440A2B5B2460ABE300EA182C /* PregenantNutritionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 440A2B5A2460ABE300EA182C /* PregenantNutritionVC.xib */; };
+		440A2B602460AC4C00EA182C /* ExtraWeightVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 440A2B5F2460AC4C00EA182C /* ExtraWeightVC.xib */; };
+		440A2B622460AC5F00EA182C /* FoodRecipesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 440A2B612460AC5E00EA182C /* FoodRecipesVC.xib */; };
+		440A2B642460AC6C00EA182C /* GoodFoodVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 440A2B632460AC6C00EA182C /* GoodFoodVC.xib */; };
+		440A2B682460AC8400EA182C /* NutritionNeededVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 440A2B652460AC8300EA182C /* NutritionNeededVC.xib */; };
+		440A2B692460AC8400EA182C /* PregnancySupplementVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 440A2B662460AC8300EA182C /* PregnancySupplementVC.xib */; };
+		440A2B6A2460AC8400EA182C /* EatingPrinciplesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 440A2B672460AC8400EA182C /* EatingPrinciplesVC.xib */; };
+		440A2B702460ACBD00EA182C /* SafeTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 440A2B6B2460ACBB00EA182C /* SafeTVCell.xib */; };
+		440A2B712460ACBD00EA182C /* NutritionNeededCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 440A2B6C2460ACBB00EA182C /* NutritionNeededCVCell.xib */; };
+		440A2B722460ACBD00EA182C /* ExtraFoodTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 440A2B6D2460ACBC00EA182C /* ExtraFoodTVCell.xib */; };
+		440A2B732460ACBD00EA182C /* FoodTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 440A2B6E2460ACBC00EA182C /* FoodTVCell.xib */; };
+		440A2B742460ACBD00EA182C /* PregnancySupplementCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 440A2B6F2460ACBD00EA182C /* PregnancySupplementCVCell.xib */; };
+		440A2B762460ACD100EA182C /* BabySleepTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 440A2B752460ACD100EA182C /* BabySleepTVCell.xib */; };
+		440A2B7B2460ACE600EA182C /* AllChecksTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 440A2B782460ACE500EA182C /* AllChecksTVCell.xib */; };
+		440A2B7C2460ACE600EA182C /* RemainedTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 440A2B792460ACE600EA182C /* RemainedTVCell.xib */; };
+		440A2B7D2460ACE600EA182C /* CompletedTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 440A2B7A2460ACE600EA182C /* CompletedTVCell.xib */; };
+		440A2B812460AD9C00EA182C /* BabySleepTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440A2B802460AD9C00EA182C /* BabySleepTVCell.swift */; };
+		440A2B842460AE2100EA182C /* ExtraFoodTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440A2B832460AE2100EA182C /* ExtraFoodTVCell.swift */; };
+		440A2B862460AE6400EA182C /* FoodTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440A2B852460AE6400EA182C /* FoodTVCell.swift */; };
+		440A2B882460AEB700EA182C /* NutritionNeededCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440A2B872460AEB700EA182C /* NutritionNeededCVCell.swift */; };
+		440A2B8A2460AEFA00EA182C /* PregnancySupplementCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440A2B892460AEFA00EA182C /* PregnancySupplementCVCell.swift */; };
+		440A2B8C2460AF2A00EA182C /* SafeTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440A2B8B2460AF2A00EA182C /* SafeTVCell.swift */; };
+		440A2B8E2460AF6700EA182C /* AllChecksTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440A2B8D2460AF6700EA182C /* AllChecksTVCell.swift */; };
+		440A2B902460AF8A00EA182C /* CompletedTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440A2B8F2460AF8A00EA182C /* CompletedTVCell.swift */; };
+		440A2B922460AFAE00EA182C /* RemainedTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440A2B912460AFAE00EA182C /* RemainedTVCell.swift */; };
+		440A2B9B2460B06E00EA182C /* PregenantNutritionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440A2B9A2460B06E00EA182C /* PregenantNutritionVC.swift */; };
+		440A2B9D2460B0A200EA182C /* BabyNutritionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440A2B9C2460B0A200EA182C /* BabyNutritionVC.swift */; };
+		440A2B9F2460B0C600EA182C /* ChildNutritionGuideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440A2B9E2460B0C600EA182C /* ChildNutritionGuideVC.swift */; };
+		440A2BA12460B0F800EA182C /* BabySleepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440A2BA02460B0F800EA182C /* BabySleepVC.swift */; };
+		440A2BA32460B12000EA182C /* ChildPeriodVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440A2BA22460B12000EA182C /* ChildPeriodVC.swift */; };
+		440A2BA52460B14A00EA182C /* CheckVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440A2BA42460B14A00EA182C /* CheckVC.swift */; };
+		440A2BA72460B17F00EA182C /* ExtraWeightVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440A2BA62460B17F00EA182C /* ExtraWeightVC.swift */; };
+		440A2BA92460B1A700EA182C /* FoodRecipesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440A2BA82460B1A700EA182C /* FoodRecipesVC.swift */; };
+		440A2BAB2460B1CD00EA182C /* GoodFoodVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440A2BAA2460B1CD00EA182C /* GoodFoodVC.swift */; };
+		440A2BAD2460B1F400EA182C /* EatingPrinciplesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440A2BAC2460B1F400EA182C /* EatingPrinciplesVC.swift */; };
+		440A2BAF2460B21600EA182C /* NutritionNeededVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440A2BAE2460B21600EA182C /* NutritionNeededVC.swift */; };
+		440A2BB12460B23B00EA182C /* PregnancySupplementVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440A2BB02460B23B00EA182C /* PregnancySupplementVC.swift */; };
+		440A2BB32460B37F00EA182C /* AllChecksVC+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440A2BB22460B37F00EA182C /* AllChecksVC+Extensions.swift */; };
+		440A2BB52460B3A400EA182C /* BabyNutrion+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440A2BB42460B3A400EA182C /* BabyNutrion+Extension.swift */; };
+		440A2BB72460B3C500EA182C /* BabySleep+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440A2BB62460B3C500EA182C /* BabySleep+Extension.swift */; };
+		440A2BB92460B3E700EA182C /* EatingPriciples+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440A2BB82460B3E700EA182C /* EatingPriciples+Extensions.swift */; };
+		440A2BBB2460B40800EA182C /* ExtraWeight+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440A2BBA2460B40800EA182C /* ExtraWeight+Extension.swift */; };
+		440A2BBD2460B42900EA182C /* FoodRecipes+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440A2BBC2460B42900EA182C /* FoodRecipes+Extension.swift */; };
+		440A2BC52460B58E00EA182C /* PregnancySupplementVC+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440A2BC42460B58E00EA182C /* PregnancySupplementVC+Extensions.swift */; };
+		440A2BC72460B5B500EA182C /* PregnantNutrition+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440A2BC62460B5B500EA182C /* PregnantNutrition+Extensions.swift */; };
+		440C07D6243E17BB00A004E3 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440C07D4243E17BB00A004E3 /* ForgotPasswordVC.swift */; };
+		440C07D7243E17BB00A004E3 /* ForgotPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 440C07D5243E17BB00A004E3 /* ForgotPasswordVC.xib */; };
+		440C07DA243E17E800A004E3 /* EnterCodePasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440C07D8243E17E800A004E3 /* EnterCodePasswordVC.swift */; };
+		440C07DB243E17E800A004E3 /* EnterCodePasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 440C07D9243E17E800A004E3 /* EnterCodePasswordVC.xib */; };
+		440C07DE243E180D00A004E3 /* SetNewPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440C07DC243E180D00A004E3 /* SetNewPasswordVC.swift */; };
+		440C07DF243E180D00A004E3 /* SetNewPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 440C07DD243E180D00A004E3 /* SetNewPasswordVC.xib */; };
+		440C07E1243E235200A004E3 /* ForgotPasswordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440C07E0243E235200A004E3 /* ForgotPasswordPresenter.swift */; };
+		440C07E3243E236E00A004E3 /* EnterCodePasswordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440C07E2243E236E00A004E3 /* EnterCodePasswordPresenter.swift */; };
+		440C07E5243E237F00A004E3 /* SetNewPasswordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440C07E4243E237F00A004E3 /* SetNewPasswordPresenter.swift */; };
+		440C827F244CF06300B16CCE /* CompleteRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440C827D244CF06300B16CCE /* CompleteRegisterVC.swift */; };
+		440C8280244CF06300B16CCE /* CompleteRegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 440C827E244CF06300B16CCE /* CompleteRegisterVC.xib */; };
+		440C8282244D071000B16CCE /* BabyDataPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440C8281244D071000B16CCE /* BabyDataPresenter.swift */; };
+		440CA2252433C7800041C5EE /* MotherRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440CA2232433C7800041C5EE /* MotherRegisterVC.swift */; };
+		440CA2262433C7800041C5EE /* MotherRegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 440CA2242433C7800041C5EE /* MotherRegisterVC.xib */; };
+		440CA2292433C7BA0041C5EE /* DoctorRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440CA2272433C7BA0041C5EE /* DoctorRegisterVC.swift */; };
+		440CA22A2433C7BA0041C5EE /* DoctorRegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 440CA2282433C7BA0041C5EE /* DoctorRegisterVC.xib */; };
+		440E09762450CB4400E13DA5 /* PhotoAlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E09742450CB4400E13DA5 /* PhotoAlbumCell.swift */; };
+		440E09772450CB4400E13DA5 /* PhotoAlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 440E09752450CB4400E13DA5 /* PhotoAlbumCell.xib */; };
+		440E097A2450CD6400E13DA5 /* PhotoAlbumCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E09792450CD6400E13DA5 /* PhotoAlbumCollectionView.swift */; };
+		441312EE2454D62800432596 /* ShowImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441312EC2454D62800432596 /* ShowImageVC.swift */; };
+		441312EF2454D62800432596 /* ShowImageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 441312ED2454D62800432596 /* ShowImageVC.xib */; };
+		4414BD67243A673A0095E7BA /* RoundedButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4414BD66243A673A0095E7BA /* RoundedButtons.swift */; };
+		4414BD69243A67D40095E7BA /* RoundedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4414BD68243A67D40095E7BA /* RoundedViews.swift */; };
+		4414BD6C243A683C0095E7BA /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4414BD6B243A683C0095E7BA /* RoundedImage.swift */; };
+		4414BD6E243A685F0095E7BA /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4414BD6D243A685F0095E7BA /* CircleImage.swift */; };
+		4414BD71243A6EB20095E7BA /* VerficationCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4414BD6F243A6EB20095E7BA /* VerficationCodeVC.swift */; };
+		4414BD72243A6EB20095E7BA /* VerficationCodeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4414BD70243A6EB20095E7BA /* VerficationCodeVC.xib */; };
+		44178200245B32F900809624 /* ToolsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441781FE245B32F900809624 /* ToolsVC.swift */; };
+		441B1F572457777D00F18AFF /* AdImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441B1F562457777D00F18AFF /* AdImages.swift */; };
+		4424C7482461F5A3009A35ED /* ViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4424C7472461F5A3009A35ED /* ViewController + Extension.swift */; };
+		4424C74A2461F643009A35ED /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4424C7492461F643009A35ED /* UITableView.swift */; };
+		4424C74C2461F66B009A35ED /* UITapGesureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4424C74B2461F66B009A35ED /* UITapGesureRecognizer.swift */; };
+		4424C74E2461F68A009A35ED /* UICollectionVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4424C74D2461F68A009A35ED /* UICollectionVIew.swift */; };
+		4424C7512461F7A8009A35ED /* UpdateDoctorProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4424C7502461F7A8009A35ED /* UpdateDoctorProfile.swift */; };
+		4424C7592461F8AD009A35ED /* PregnancySupplementPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4424C7582461F8AD009A35ED /* PregnancySupplementPresenter.swift */; };
+		4424C75F2461F9CF009A35ED /* ToolsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4424C75E2461F9CF009A35ED /* ToolsPresenter.swift */; };
+		4424C7632461FC68009A35ED /* NutritionNeeded+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4424C7622461FC68009A35ED /* NutritionNeeded+Extensions.swift */; };
+		4424C7652461FC94009A35ED /* NutritionNeddedVCPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4424C7642461FC94009A35ED /* NutritionNeddedVCPresenter.swift */; };
+		4424C7672461FF1B009A35ED /* ToolsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4424C7662461FF1B009A35ED /* ToolsVC.xib */; };
+		4427EEC9245634B8007E6A2D /* AddPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4427EEC7245634B8007E6A2D /* AddPhotoCell.swift */; };
+		4427EECA245634B8007E6A2D /* AddPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4427EEC8245634B8007E6A2D /* AddPhotoCell.xib */; };
+		4427EECC24563827007E6A2D /* AddPhotoCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4427EECB24563827007E6A2D /* AddPhotoCollectionView.swift */; };
+		44332647245B7A2000ECE1BB /* ToolsVC+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44332646245B7A1F00ECE1BB /* ToolsVC+Extensions.swift */; };
+		4433264B245B7A9A00ECE1BB /* ToolsCV.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4433264A245B7A9900ECE1BB /* ToolsCV.xib */; };
+		4433264D245B7AC700ECE1BB /* ToolsCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4433264C245B7AC700ECE1BB /* ToolsCV.swift */; };
+		443E84D6243E807D00D92471 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443E84D4243E807D00D92471 /* MapVC.swift */; };
+		443E84D7243E807D00D92471 /* MapVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 443E84D5243E807D00D92471 /* MapVC.xib */; };
+		44442737245341EF00B8DDAD /* AddPhotoVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44442735245341EF00B8DDAD /* AddPhotoVCViewController.swift */; };
+		44442738245341EF00B8DDAD /* AddPhotoVCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44442736245341EF00B8DDAD /* AddPhotoVCViewController.xib */; };
+		4444273B2453423500B8DDAD /* MyPhotosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444427392453423500B8DDAD /* MyPhotosVC.swift */; };
+		4444273C2453423500B8DDAD /* MyPhotosVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4444273A2453423500B8DDAD /* MyPhotosVC.xib */; };
+		44480C5D24326B5800D2DFE8 /* SecondPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44480C5B24326B5800D2DFE8 /* SecondPC.swift */; };
+		44480C5E24326B5800D2DFE8 /* SecondPC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44480C5C24326B5800D2DFE8 /* SecondPC.xib */; };
+		44480C612432714D00D2DFE8 /* ThirdPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44480C5F2432714D00D2DFE8 /* ThirdPC.swift */; };
+		44480C622432714D00D2DFE8 /* ThirdPC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44480C602432714D00D2DFE8 /* ThirdPC.xib */; };
+		44480C652432735200D2DFE8 /* LastPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44480C632432735200D2DFE8 /* LastPC.swift */; };
+		44480C662432735200D2DFE8 /* LastPC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44480C642432735200D2DFE8 /* LastPC.xib */; };
+		44480C772432A42800D2DFE8 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44480C752432A42800D2DFE8 /* HomeVC.swift */; };
+		44480C782432A42800D2DFE8 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44480C762432A42800D2DFE8 /* HomeVC.xib */; };
+		44480C7B2432A47500D2DFE8 /* PhotoAlbumVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44480C792432A47500D2DFE8 /* PhotoAlbumVC.swift */; };
+		44480C7C2432A47500D2DFE8 /* PhotoAlbumVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44480C7A2432A47500D2DFE8 /* PhotoAlbumVC.xib */; };
+		44480C822432AF5900D2DFE8 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44480C812432AF5900D2DFE8 /* CustomTabBar.swift */; };
+		445221D224474A6700B4316D /* HomeCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445221D124474A6700B4316D /* HomeCollectionView.swift */; };
+		445221D524479B2E00B4316D /* ExaminationsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445221D324479B2E00B4316D /* ExaminationsTableCell.swift */; };
+		445221D624479B2E00B4316D /* ExaminationsTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 445221D424479B2E00B4316D /* ExaminationsTableCell.xib */; };
+		445221D82447A8AC00B4316D /* HomeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445221D72447A8AC00B4316D /* HomeTableView.swift */; };
+		445C19AF243926260012B1C3 /* PagerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445C19AD243926260012B1C3 /* PagerController.swift */; };
+		445C19B0243926260012B1C3 /* PagerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 445C19AE243926260012B1C3 /* PagerController.xib */; };
+		446916B42443C2FF0078A512 /* AdvicesHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446916B22443C2FF0078A512 /* AdvicesHomeCell.swift */; };
+		446916B52443C2FF0078A512 /* AdvicesHomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 446916B32443C2FF0078A512 /* AdvicesHomeCell.xib */; };
+		4485E815243674C9008E0A4D /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4485E814243674C9008E0A4D /* Errors.swift */; };
+		4485E81724369768008E0A4D /* UserLoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4485E81624369768008E0A4D /* UserLoginPresenter.swift */; };
+		4485E81A2436BF31008E0A4D /* DoctorRegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4485E8192436BF31008E0A4D /* DoctorRegisterPresenter.swift */; };
+		4485E81C2436DC80008E0A4D /* MotherRegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4485E81B2436DC80008E0A4D /* MotherRegisterPresenter.swift */; };
+		448FE1A3244890D400EB4AAB /* ArticlesCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448FE1A1244890D400EB4AAB /* ArticlesCollectionCell.swift */; };
+		448FE1A4244890D400EB4AAB /* ArticlesCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 448FE1A2244890D400EB4AAB /* ArticlesCollectionCell.xib */; };
+		44927DF02437F138001E9A5D /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44927DEF2437F138001E9A5D /* Alert.swift */; };
+		44927DF22437FA24001E9A5D /* AppConstans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44927DF12437FA24001E9A5D /* AppConstans.swift */; };
+		44927DF42437FABB001E9A5D /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44927DF32437FABB001E9A5D /* StringExtensions.swift */; };
+		449F32A224673DA800054095 /* MoreDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 449F32A024673DA700054095 /* MoreDetailsVC.xib */; };
+		449F32A324673DA800054095 /* MedicalGuideVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 449F32A124673DA800054095 /* MedicalGuideVC.xib */; };
+		449F32A824673DC300054095 /* MostReadingCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 449F32A524673DC200054095 /* MostReadingCVCell.xib */; };
+		449F32A924673DC300054095 /* AllOfObjectsCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 449F32A624673DC300054095 /* AllOfObjectsCVCell.xib */; };
+		449F32AA24673DC300054095 /* DoctorsCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 449F32A724673DC300054095 /* DoctorsCVCell.xib */; };
+		449F32AF24673E5F00054095 /* MoreDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449F32AD24673E5F00054095 /* MoreDetailsVC.swift */; };
+		449F32B024673E5F00054095 /* MedicalGuideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449F32AE24673E5F00054095 /* MedicalGuideVC.swift */; };
+		449F32B524673E7E00054095 /* DoctorsCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449F32B224673E7D00054095 /* DoctorsCVCell.swift */; };
+		449F32B624673E7E00054095 /* AllOfObjectsCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449F32B324673E7E00054095 /* AllOfObjectsCVCell.swift */; };
+		449F32B724673E7E00054095 /* MostReadingCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449F32B424673E7E00054095 /* MostReadingCVCell.swift */; };
+		449F32B924673EA500054095 /* MedicalGuide+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449F32B824673EA500054095 /* MedicalGuide+Extension.swift */; };
+		449F32C02467404400054095 /* MyBabyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 449F32BB2467404200054095 /* MyBabyVC.xib */; };
+		449F32C12467404400054095 /* MoreVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 449F32BC2467404200054095 /* MoreVC.xib */; };
+		449F32C22467404400054095 /* MyProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 449F32BD2467404300054095 /* MyProfileVC.xib */; };
+		449F32C32467404400054095 /* SavedTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 449F32BE2467404300054095 /* SavedTVCell.xib */; };
+		449F32C42467404400054095 /* SavedVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 449F32BF2467404400054095 /* SavedVC.xib */; };
+		449F32CB2467406F00054095 /* SavedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449F32C62467406D00054095 /* SavedVC.swift */; };
+		449F32CC2467406F00054095 /* MyProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449F32C72467406D00054095 /* MyProfileVC.swift */; };
+		449F32CD2467406F00054095 /* SavedTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449F32C82467406E00054095 /* SavedTVCell.swift */; };
+		449F32CE2467406F00054095 /* MoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449F32C92467406E00054095 /* MoreVC.swift */; };
+		449F32CF2467406F00054095 /* MyBabyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449F32CA2467406F00054095 /* MyBabyVC.swift */; };
+		449F32D1246740A200054095 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449F32D0246740A200054095 /* SettingsVC.swift */; };
+		449F32D3246740BD00054095 /* SettingsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 449F32D2246740BD00054095 /* SettingsVC.xib */; };
+		449F32DE2467416500054095 /* ArticlesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 449F32DD2467416400054095 /* ArticlesVC.xib */; };
+		449F32E02467417200054095 /* PregnancyTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 449F32DF2467417200054095 /* PregnancyTestVC.xib */; };
+		449F32E3246741A100054095 /* ArticlesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449F32E2246741A000054095 /* ArticlesVC.swift */; };
+		449F32E5246741AD00054095 /* PregnancyTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449F32E4246741AD00054095 /* PregnancyTestVC.swift */; };
+		449F330E2467456F00054095 /* WorkDatesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 449F330A2467456D00054095 /* WorkDatesVC.xib */; };
+		449F330F2467456F00054095 /* DrProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 449F330B2467456E00054095 /* DrProfileVC.xib */; };
+		449F33102467456F00054095 /* MoreDrVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 449F330C2467456E00054095 /* MoreDrVC.xib */; };
+		449F33112467456F00054095 /* SaveDrDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 449F330D2467456F00054095 /* SaveDrDetailsVC.xib */; };
+		449F3313246745A500054095 /* DrViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449F3312246745A500054095 /* DrViewProtocol.swift */; };
+		449F3315246745DD00054095 /* DrProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449F3314246745DD00054095 /* DrProfileVC.swift */; };
+		449F33172467462100054095 /* DrProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449F33162467462100054095 /* DrProfile.swift */; };
+		449F33192467465500054095 /* MoreDrVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449F33182467465500054095 /* MoreDrVC.swift */; };
+		449F331B2467468300054095 /* WorkDatesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449F331A2467468300054095 /* WorkDatesVC.swift */; };
+		449F331D246746AD00054095 /* WorkDatesVC+PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449F331C246746AD00054095 /* WorkDatesVC+PickerView.swift */; };
+		449F33212467471800054095 /* WorkDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449F33202467471800054095 /* WorkDate.swift */; };
+		449F33232467475500054095 /* SaveDrDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449F33222467475500054095 /* SaveDrDetailsVC.swift */; };
+		449F332A246761F600054095 /* ChangeLanguageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449F3328246761F600054095 /* ChangeLanguageVC.swift */; };
+		449F332B246761F600054095 /* ChangeLanguageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 449F3329246761F600054095 /* ChangeLanguageVC.xib */; };
+		44B5D2D5243FC8EA001D4103 /* RoundedTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B5D2D4243FC8EA001D4103 /* RoundedTopView.swift */; };
+		44B8DCB424354A86001528C7 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B8DCB224354A86001528C7 /* LoginVC.swift */; };
+		44B8DCB524354A86001528C7 /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44B8DCB324354A86001528C7 /* LoginVC.xib */; };
+		44DE519D245493BB0074656D /* MyPhotosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DE519B245493BB0074656D /* MyPhotosCell.swift */; };
+		44DE519E245493BB0074656D /* MyPhotosCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44DE519C245493BB0074656D /* MyPhotosCell.xib */; };
+		44DE51A0245499B40074656D /* MyPhotoCollection + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DE519F245499B40074656D /* MyPhotoCollection + Extensions.swift */; };
+		61679F185EDA344D3E2A2DAE /* Pods_MomCare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D743EAD322408C8677E0404C /* Pods_MomCare.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		035F8D89246FE91600CE553E /* SaveDrDetailsVC+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SaveDrDetailsVC+Extension.swift"; sourceTree = "<group>"; };
+		039E4A01247023BC0085B5AD /* SavedImages+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SavedImages+Extension.swift"; sourceTree = "<group>"; };
+		440249C7242FB902007221F5 /* MomCare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MomCare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		440249CA242FB902007221F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		440249CC242FB902007221F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		440249D3242FB904007221F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		440249D6242FB904007221F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		440249D8242FB904007221F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		440249E7242FBB70007221F5 /* Cairo-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Black.ttf"; sourceTree = "<group>"; };
+		440249E8242FBB70007221F5 /* Cairo-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Light.ttf"; sourceTree = "<group>"; };
+		440249E9242FBB70007221F5 /* Cairo-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-ExtraLight.ttf"; sourceTree = "<group>"; };
+		440249EA242FBB70007221F5 /* Cairo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Regular.ttf"; sourceTree = "<group>"; };
+		440249EB242FBB70007221F5 /* Cairo-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-SemiBold.ttf"; sourceTree = "<group>"; };
+		440249EC242FBB70007221F5 /* Cairo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Bold.ttf"; sourceTree = "<group>"; };
+		440249F3242FBC15007221F5 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		440249F5242FBC1F007221F5 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		440249F7242FBC33007221F5 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		440249F9242FBCCC007221F5 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		440249FB242FBCEE007221F5 /* CustomTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFields.swift; sourceTree = "<group>"; };
+		440249FD242FBD01007221F5 /* CustomLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabels.swift; sourceTree = "<group>"; };
+		440249FF242FBD13007221F5 /* CustomButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtons.swift; sourceTree = "<group>"; };
+		44024A05242FBDD5007221F5 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		44024A07242FBDE9007221F5 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		44024A09242FBDF4007221F5 /* Localizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizer.swift; sourceTree = "<group>"; };
+		44024A0B242FBDFE007221F5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		44024A1F242FC276007221F5 /* FirstPC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPC.swift; sourceTree = "<group>"; };
+		44024A20242FC276007221F5 /* StartVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartVC.xib; sourceTree = "<group>"; };
+		440A2B502460AB7100EA182C /* BabyNutritionVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BabyNutritionVC.xib; sourceTree = "<group>"; };
+		440A2B522460AB8600EA182C /* ChildNutritionGuideVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChildNutritionGuideVC.xib; sourceTree = "<group>"; };
+		440A2B542460ABB000EA182C /* BabySleepVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BabySleepVC.xib; sourceTree = "<group>"; };
+		440A2B562460ABBE00EA182C /* ChildPeriodVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChildPeriodVC.xib; sourceTree = "<group>"; };
+		440A2B582460ABD100EA182C /* CheckVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CheckVC.xib; sourceTree = "<group>"; };
+		440A2B5A2460ABE300EA182C /* PregenantNutritionVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PregenantNutritionVC.xib; sourceTree = "<group>"; };
+		440A2B5F2460AC4C00EA182C /* ExtraWeightVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExtraWeightVC.xib; sourceTree = "<group>"; };
+		440A2B612460AC5E00EA182C /* FoodRecipesVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodRecipesVC.xib; sourceTree = "<group>"; };
+		440A2B632460AC6C00EA182C /* GoodFoodVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoodFoodVC.xib; sourceTree = "<group>"; };
+		440A2B652460AC8300EA182C /* NutritionNeededVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NutritionNeededVC.xib; sourceTree = "<group>"; };
+		440A2B662460AC8300EA182C /* PregnancySupplementVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PregnancySupplementVC.xib; sourceTree = "<group>"; };
+		440A2B672460AC8400EA182C /* EatingPrinciplesVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EatingPrinciplesVC.xib; sourceTree = "<group>"; };
+		440A2B6B2460ACBB00EA182C /* SafeTVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SafeTVCell.xib; sourceTree = "<group>"; };
+		440A2B6C2460ACBB00EA182C /* NutritionNeededCVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NutritionNeededCVCell.xib; sourceTree = "<group>"; };
+		440A2B6D2460ACBC00EA182C /* ExtraFoodTVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExtraFoodTVCell.xib; sourceTree = "<group>"; };
+		440A2B6E2460ACBC00EA182C /* FoodTVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodTVCell.xib; sourceTree = "<group>"; };
+		440A2B6F2460ACBD00EA182C /* PregnancySupplementCVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PregnancySupplementCVCell.xib; sourceTree = "<group>"; };
+		440A2B752460ACD100EA182C /* BabySleepTVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BabySleepTVCell.xib; sourceTree = "<group>"; };
+		440A2B782460ACE500EA182C /* AllChecksTVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AllChecksTVCell.xib; sourceTree = "<group>"; };
+		440A2B792460ACE600EA182C /* RemainedTVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RemainedTVCell.xib; sourceTree = "<group>"; };
+		440A2B7A2460ACE600EA182C /* CompletedTVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CompletedTVCell.xib; sourceTree = "<group>"; };
+		440A2B802460AD9C00EA182C /* BabySleepTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabySleepTVCell.swift; sourceTree = "<group>"; };
+		440A2B832460AE2100EA182C /* ExtraFoodTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraFoodTVCell.swift; sourceTree = "<group>"; };
+		440A2B852460AE6400EA182C /* FoodTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTVCell.swift; sourceTree = "<group>"; };
+		440A2B872460AEB700EA182C /* NutritionNeededCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionNeededCVCell.swift; sourceTree = "<group>"; };
+		440A2B892460AEFA00EA182C /* PregnancySupplementCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PregnancySupplementCVCell.swift; sourceTree = "<group>"; };
+		440A2B8B2460AF2A00EA182C /* SafeTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeTVCell.swift; sourceTree = "<group>"; };
+		440A2B8D2460AF6700EA182C /* AllChecksTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllChecksTVCell.swift; sourceTree = "<group>"; };
+		440A2B8F2460AF8A00EA182C /* CompletedTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedTVCell.swift; sourceTree = "<group>"; };
+		440A2B912460AFAE00EA182C /* RemainedTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemainedTVCell.swift; sourceTree = "<group>"; };
+		440A2B9A2460B06E00EA182C /* PregenantNutritionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PregenantNutritionVC.swift; sourceTree = "<group>"; };
+		440A2B9C2460B0A200EA182C /* BabyNutritionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyNutritionVC.swift; sourceTree = "<group>"; };
+		440A2B9E2460B0C600EA182C /* ChildNutritionGuideVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildNutritionGuideVC.swift; sourceTree = "<group>"; };
+		440A2BA02460B0F800EA182C /* BabySleepVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabySleepVC.swift; sourceTree = "<group>"; };
+		440A2BA22460B12000EA182C /* ChildPeriodVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildPeriodVC.swift; sourceTree = "<group>"; };
+		440A2BA42460B14A00EA182C /* CheckVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckVC.swift; sourceTree = "<group>"; };
+		440A2BA62460B17F00EA182C /* ExtraWeightVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraWeightVC.swift; sourceTree = "<group>"; };
+		440A2BA82460B1A700EA182C /* FoodRecipesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRecipesVC.swift; sourceTree = "<group>"; };
+		440A2BAA2460B1CD00EA182C /* GoodFoodVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodFoodVC.swift; sourceTree = "<group>"; };
+		440A2BAC2460B1F400EA182C /* EatingPrinciplesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatingPrinciplesVC.swift; sourceTree = "<group>"; };
+		440A2BAE2460B21600EA182C /* NutritionNeededVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionNeededVC.swift; sourceTree = "<group>"; };
+		440A2BB02460B23B00EA182C /* PregnancySupplementVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PregnancySupplementVC.swift; sourceTree = "<group>"; };
+		440A2BB22460B37F00EA182C /* AllChecksVC+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AllChecksVC+Extensions.swift"; sourceTree = "<group>"; };
+		440A2BB42460B3A400EA182C /* BabyNutrion+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BabyNutrion+Extension.swift"; sourceTree = "<group>"; };
+		440A2BB62460B3C500EA182C /* BabySleep+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BabySleep+Extension.swift"; sourceTree = "<group>"; };
+		440A2BB82460B3E700EA182C /* EatingPriciples+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EatingPriciples+Extensions.swift"; sourceTree = "<group>"; };
+		440A2BBA2460B40800EA182C /* ExtraWeight+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExtraWeight+Extension.swift"; sourceTree = "<group>"; };
+		440A2BBC2460B42900EA182C /* FoodRecipes+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FoodRecipes+Extension.swift"; sourceTree = "<group>"; };
+		440A2BC42460B58E00EA182C /* PregnancySupplementVC+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PregnancySupplementVC+Extensions.swift"; sourceTree = "<group>"; };
+		440A2BC62460B5B500EA182C /* PregnantNutrition+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PregnantNutrition+Extensions.swift"; sourceTree = "<group>"; };
+		440C07D4243E17BB00A004E3 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
+		440C07D5243E17BB00A004E3 /* ForgotPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPasswordVC.xib; sourceTree = "<group>"; };
+		440C07D8243E17E800A004E3 /* EnterCodePasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterCodePasswordVC.swift; sourceTree = "<group>"; };
+		440C07D9243E17E800A004E3 /* EnterCodePasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EnterCodePasswordVC.xib; sourceTree = "<group>"; };
+		440C07DC243E180D00A004E3 /* SetNewPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetNewPasswordVC.swift; sourceTree = "<group>"; };
+		440C07DD243E180D00A004E3 /* SetNewPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetNewPasswordVC.xib; sourceTree = "<group>"; };
+		440C07E0243E235200A004E3 /* ForgotPasswordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordPresenter.swift; sourceTree = "<group>"; };
+		440C07E2243E236E00A004E3 /* EnterCodePasswordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterCodePasswordPresenter.swift; sourceTree = "<group>"; };
+		440C07E4243E237F00A004E3 /* SetNewPasswordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetNewPasswordPresenter.swift; sourceTree = "<group>"; };
+		440C827D244CF06300B16CCE /* CompleteRegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteRegisterVC.swift; sourceTree = "<group>"; };
+		440C827E244CF06300B16CCE /* CompleteRegisterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompleteRegisterVC.xib; sourceTree = "<group>"; };
+		440C8281244D071000B16CCE /* BabyDataPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyDataPresenter.swift; sourceTree = "<group>"; };
+		440CA2232433C7800041C5EE /* MotherRegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotherRegisterVC.swift; sourceTree = "<group>"; };
+		440CA2242433C7800041C5EE /* MotherRegisterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MotherRegisterVC.xib; sourceTree = "<group>"; };
+		440CA2272433C7BA0041C5EE /* DoctorRegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorRegisterVC.swift; sourceTree = "<group>"; };
+		440CA2282433C7BA0041C5EE /* DoctorRegisterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoctorRegisterVC.xib; sourceTree = "<group>"; };
+		440E09742450CB4400E13DA5 /* PhotoAlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAlbumCell.swift; sourceTree = "<group>"; };
+		440E09752450CB4400E13DA5 /* PhotoAlbumCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoAlbumCell.xib; sourceTree = "<group>"; };
+		440E09792450CD6400E13DA5 /* PhotoAlbumCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAlbumCollectionView.swift; sourceTree = "<group>"; };
+		441312EC2454D62800432596 /* ShowImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowImageVC.swift; sourceTree = "<group>"; };
+		441312ED2454D62800432596 /* ShowImageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowImageVC.xib; sourceTree = "<group>"; };
+		4414BD66243A673A0095E7BA /* RoundedButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButtons.swift; sourceTree = "<group>"; };
+		4414BD68243A67D40095E7BA /* RoundedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedViews.swift; sourceTree = "<group>"; };
+		4414BD6B243A683C0095E7BA /* RoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
+		4414BD6D243A685F0095E7BA /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		4414BD6F243A6EB20095E7BA /* VerficationCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerficationCodeVC.swift; sourceTree = "<group>"; };
+		4414BD70243A6EB20095E7BA /* VerficationCodeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VerficationCodeVC.xib; sourceTree = "<group>"; };
+		441781FE245B32F900809624 /* ToolsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsVC.swift; sourceTree = "<group>"; };
+		441B1F562457777D00F18AFF /* AdImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdImages.swift; sourceTree = "<group>"; };
+		4424C7472461F5A3009A35ED /* ViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController + Extension.swift"; sourceTree = "<group>"; };
+		4424C7492461F643009A35ED /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		4424C74B2461F66B009A35ED /* UITapGesureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITapGesureRecognizer.swift; sourceTree = "<group>"; };
+		4424C74D2461F68A009A35ED /* UICollectionVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionVIew.swift; sourceTree = "<group>"; };
+		4424C7502461F7A8009A35ED /* UpdateDoctorProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateDoctorProfile.swift; sourceTree = "<group>"; };
+		4424C7582461F8AD009A35ED /* PregnancySupplementPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PregnancySupplementPresenter.swift; sourceTree = "<group>"; };
+		4424C75E2461F9CF009A35ED /* ToolsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsPresenter.swift; sourceTree = "<group>"; };
+		4424C7622461FC68009A35ED /* NutritionNeeded+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NutritionNeeded+Extensions.swift"; sourceTree = "<group>"; };
+		4424C7642461FC94009A35ED /* NutritionNeddedVCPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionNeddedVCPresenter.swift; sourceTree = "<group>"; };
+		4424C7662461FF1B009A35ED /* ToolsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ToolsVC.xib; path = Cells/ToolsVC.xib; sourceTree = "<group>"; };
+		4427EEC7245634B8007E6A2D /* AddPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoCell.swift; sourceTree = "<group>"; };
+		4427EEC8245634B8007E6A2D /* AddPhotoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddPhotoCell.xib; sourceTree = "<group>"; };
+		4427EECB24563827007E6A2D /* AddPhotoCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoCollectionView.swift; sourceTree = "<group>"; };
+		44332646245B7A1F00ECE1BB /* ToolsVC+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ToolsVC+Extensions.swift"; sourceTree = "<group>"; };
+		4433264A245B7A9900ECE1BB /* ToolsCV.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToolsCV.xib; sourceTree = "<group>"; };
+		4433264C245B7AC700ECE1BB /* ToolsCV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolsCV.swift; sourceTree = "<group>"; };
+		443E84D4243E807D00D92471 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		443E84D5243E807D00D92471 /* MapVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapVC.xib; sourceTree = "<group>"; };
+		44442735245341EF00B8DDAD /* AddPhotoVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoVCViewController.swift; sourceTree = "<group>"; };
+		44442736245341EF00B8DDAD /* AddPhotoVCViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddPhotoVCViewController.xib; sourceTree = "<group>"; };
+		444427392453423500B8DDAD /* MyPhotosVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPhotosVC.swift; sourceTree = "<group>"; };
+		4444273A2453423500B8DDAD /* MyPhotosVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPhotosVC.xib; sourceTree = "<group>"; };
+		44480C5B24326B5800D2DFE8 /* SecondPC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPC.swift; sourceTree = "<group>"; };
+		44480C5C24326B5800D2DFE8 /* SecondPC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondPC.xib; sourceTree = "<group>"; };
+		44480C5F2432714D00D2DFE8 /* ThirdPC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdPC.swift; sourceTree = "<group>"; };
+		44480C602432714D00D2DFE8 /* ThirdPC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdPC.xib; sourceTree = "<group>"; };
+		44480C632432735200D2DFE8 /* LastPC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastPC.swift; sourceTree = "<group>"; };
+		44480C642432735200D2DFE8 /* LastPC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LastPC.xib; sourceTree = "<group>"; };
+		44480C752432A42800D2DFE8 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		44480C762432A42800D2DFE8 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		44480C792432A47500D2DFE8 /* PhotoAlbumVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAlbumVC.swift; sourceTree = "<group>"; };
+		44480C7A2432A47500D2DFE8 /* PhotoAlbumVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoAlbumVC.xib; sourceTree = "<group>"; };
+		44480C812432AF5900D2DFE8 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		445221D124474A6700B4316D /* HomeCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionView.swift; sourceTree = "<group>"; };
+		445221D324479B2E00B4316D /* ExaminationsTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExaminationsTableCell.swift; sourceTree = "<group>"; };
+		445221D424479B2E00B4316D /* ExaminationsTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExaminationsTableCell.xib; sourceTree = "<group>"; };
+		445221D72447A8AC00B4316D /* HomeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableView.swift; sourceTree = "<group>"; };
+		445C19AD243926260012B1C3 /* PagerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerController.swift; sourceTree = "<group>"; };
+		445C19AE243926260012B1C3 /* PagerController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PagerController.xib; sourceTree = "<group>"; };
+		446916B22443C2FF0078A512 /* AdvicesHomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvicesHomeCell.swift; sourceTree = "<group>"; };
+		446916B32443C2FF0078A512 /* AdvicesHomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdvicesHomeCell.xib; sourceTree = "<group>"; };
+		4485E814243674C9008E0A4D /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		4485E81624369768008E0A4D /* UserLoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginPresenter.swift; sourceTree = "<group>"; };
+		4485E8192436BF31008E0A4D /* DoctorRegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorRegisterPresenter.swift; sourceTree = "<group>"; };
+		4485E81B2436DC80008E0A4D /* MotherRegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotherRegisterPresenter.swift; sourceTree = "<group>"; };
+		448FE1A1244890D400EB4AAB /* ArticlesCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesCollectionCell.swift; sourceTree = "<group>"; };
+		448FE1A2244890D400EB4AAB /* ArticlesCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticlesCollectionCell.xib; sourceTree = "<group>"; };
+		44927DEF2437F138001E9A5D /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		44927DF12437FA24001E9A5D /* AppConstans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstans.swift; sourceTree = "<group>"; };
+		44927DF32437FABB001E9A5D /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		449F32A024673DA700054095 /* MoreDetailsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreDetailsVC.xib; sourceTree = "<group>"; };
+		449F32A124673DA800054095 /* MedicalGuideVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MedicalGuideVC.xib; sourceTree = "<group>"; };
+		449F32A524673DC200054095 /* MostReadingCVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MostReadingCVCell.xib; sourceTree = "<group>"; };
+		449F32A624673DC300054095 /* AllOfObjectsCVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AllOfObjectsCVCell.xib; sourceTree = "<group>"; };
+		449F32A724673DC300054095 /* DoctorsCVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DoctorsCVCell.xib; sourceTree = "<group>"; };
+		449F32AD24673E5F00054095 /* MoreDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreDetailsVC.swift; sourceTree = "<group>"; };
+		449F32AE24673E5F00054095 /* MedicalGuideVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicalGuideVC.swift; sourceTree = "<group>"; };
+		449F32B224673E7D00054095 /* DoctorsCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoctorsCVCell.swift; sourceTree = "<group>"; };
+		449F32B324673E7E00054095 /* AllOfObjectsCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllOfObjectsCVCell.swift; sourceTree = "<group>"; };
+		449F32B424673E7E00054095 /* MostReadingCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MostReadingCVCell.swift; sourceTree = "<group>"; };
+		449F32B824673EA500054095 /* MedicalGuide+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MedicalGuide+Extension.swift"; sourceTree = "<group>"; };
+		449F32BB2467404200054095 /* MyBabyVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyBabyVC.xib; sourceTree = "<group>"; };
+		449F32BC2467404200054095 /* MoreVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreVC.xib; sourceTree = "<group>"; };
+		449F32BD2467404300054095 /* MyProfileVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyProfileVC.xib; sourceTree = "<group>"; };
+		449F32BE2467404300054095 /* SavedTVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SavedTVCell.xib; sourceTree = "<group>"; };
+		449F32BF2467404400054095 /* SavedVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SavedVC.xib; sourceTree = "<group>"; };
+		449F32C62467406D00054095 /* SavedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedVC.swift; sourceTree = "<group>"; };
+		449F32C72467406D00054095 /* MyProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileVC.swift; sourceTree = "<group>"; };
+		449F32C82467406E00054095 /* SavedTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedTVCell.swift; sourceTree = "<group>"; };
+		449F32C92467406E00054095 /* MoreVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreVC.swift; sourceTree = "<group>"; };
+		449F32CA2467406F00054095 /* MyBabyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyBabyVC.swift; sourceTree = "<group>"; };
+		449F32D0246740A200054095 /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		449F32D2246740BD00054095 /* SettingsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsVC.xib; sourceTree = "<group>"; };
+		449F32DD2467416400054095 /* ArticlesVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticlesVC.xib; sourceTree = "<group>"; };
+		449F32DF2467417200054095 /* PregnancyTestVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PregnancyTestVC.xib; sourceTree = "<group>"; };
+		449F32E2246741A000054095 /* ArticlesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesVC.swift; sourceTree = "<group>"; };
+		449F32E4246741AD00054095 /* PregnancyTestVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PregnancyTestVC.swift; sourceTree = "<group>"; };
+		449F330A2467456D00054095 /* WorkDatesVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorkDatesVC.xib; sourceTree = "<group>"; };
+		449F330B2467456E00054095 /* DrProfileVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrProfileVC.xib; sourceTree = "<group>"; };
+		449F330C2467456E00054095 /* MoreDrVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreDrVC.xib; sourceTree = "<group>"; };
+		449F330D2467456F00054095 /* SaveDrDetailsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SaveDrDetailsVC.xib; sourceTree = "<group>"; };
+		449F3312246745A500054095 /* DrViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrViewProtocol.swift; sourceTree = "<group>"; };
+		449F3314246745DD00054095 /* DrProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrProfileVC.swift; sourceTree = "<group>"; };
+		449F33162467462100054095 /* DrProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrProfile.swift; sourceTree = "<group>"; };
+		449F33182467465500054095 /* MoreDrVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreDrVC.swift; sourceTree = "<group>"; };
+		449F331A2467468300054095 /* WorkDatesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkDatesVC.swift; sourceTree = "<group>"; };
+		449F331C246746AD00054095 /* WorkDatesVC+PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorkDatesVC+PickerView.swift"; sourceTree = "<group>"; };
+		449F33202467471800054095 /* WorkDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkDate.swift; sourceTree = "<group>"; };
+		449F33222467475500054095 /* SaveDrDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveDrDetailsVC.swift; sourceTree = "<group>"; };
+		449F3328246761F600054095 /* ChangeLanguageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeLanguageVC.swift; sourceTree = "<group>"; };
+		449F3329246761F600054095 /* ChangeLanguageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangeLanguageVC.xib; sourceTree = "<group>"; };
+		44B5D2D4243FC8EA001D4103 /* RoundedTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTopView.swift; sourceTree = "<group>"; };
+		44B8DCB224354A86001528C7 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		44B8DCB324354A86001528C7 /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
+		44DE519B245493BB0074656D /* MyPhotosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPhotosCell.swift; sourceTree = "<group>"; };
+		44DE519C245493BB0074656D /* MyPhotosCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPhotosCell.xib; sourceTree = "<group>"; };
+		44DE519F245499B40074656D /* MyPhotoCollection + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyPhotoCollection + Extensions.swift"; sourceTree = "<group>"; };
+		740D0BCEA48855023918F735 /* Pods-MomCare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MomCare.debug.xcconfig"; path = "Target Support Files/Pods-MomCare/Pods-MomCare.debug.xcconfig"; sourceTree = "<group>"; };
+		970AD9494AFBFEEDFE0F23F9 /* Pods-MomCare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MomCare.release.xcconfig"; path = "Target Support Files/Pods-MomCare/Pods-MomCare.release.xcconfig"; sourceTree = "<group>"; };
+		D743EAD322408C8677E0404C /* Pods_MomCare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MomCare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		440249C4242FB902007221F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61679F185EDA344D3E2A2DAE /* Pods_MomCare.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F1868F83F59990F3B0534F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				740D0BCEA48855023918F735 /* Pods-MomCare.debug.xcconfig */,
+				970AD9494AFBFEEDFE0F23F9 /* Pods-MomCare.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		440249BE242FB902007221F5 = {
+			isa = PBXGroup;
+			children = (
+				440249C9242FB902007221F5 /* MomCare */,
+				440249C8242FB902007221F5 /* Products */,
+				3F1868F83F59990F3B0534F0 /* Pods */,
+				6B391B9832E1AFDC95135966 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		440249C8242FB902007221F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				440249C7242FB902007221F5 /* MomCare.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		440249C9242FB902007221F5 /* MomCare */ = {
+			isa = PBXGroup;
+			children = (
+				440249E4242FBB32007221F5 /* Resources */,
+				440249E3242FBB2C007221F5 /* Utilites */,
+				440249E2242FBB25007221F5 /* API */,
+				440249E1242FBB14007221F5 /* CustomUIViews */,
+				440249E0242FBB0D007221F5 /* Extensions */,
+				440249DF242FBB05007221F5 /* SupportingFiles */,
+				440249DE242FBAF0007221F5 /* Scenes */,
+			);
+			path = MomCare;
+			sourceTree = "<group>";
+		};
+		440249DE242FBAF0007221F5 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				44024A0D242FC156007221F5 /* Model */,
+				44024A10242FC18C007221F5 /* View */,
+				44024A0F242FC164007221F5 /* Presenter */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		440249DF242FBB05007221F5 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				44024A05242FBDD5007221F5 /* Storyboard.swift */,
+				44024A07242FBDE9007221F5 /* Language.swift */,
+				44024A09242FBDF4007221F5 /* Localizer.swift */,
+				44024A0B242FBDFE007221F5 /* Extensions.swift */,
+				44927DEF2437F138001E9A5D /* Alert.swift */,
+				44927DF12437FA24001E9A5D /* AppConstans.swift */,
+				44927DF32437FABB001E9A5D /* StringExtensions.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		440249E0242FBB0D007221F5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				44332645245B7A0C00ECE1BB /* Gedamy */,
+				44F0385B244F8848001BC095 /* Eissa */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		440249E1242FBB14007221F5 /* CustomUIViews */ = {
+			isa = PBXGroup;
+			children = (
+				4414BD6A243A68180095E7BA /* CustomImageViews */,
+				440CA22E2433F7160041C5EE /* CustomButtons */,
+				440CA22C2433F6DA0041C5EE /* CustomTextFields */,
+				440CA22B2433F69C0041C5EE /* CustomUIViews */,
+				440CA22D2433F70D0041C5EE /* CustomLabels */,
+				44480C812432AF5900D2DFE8 /* CustomTabBar.swift */,
+			);
+			path = CustomUIViews;
+			sourceTree = "<group>";
+		};
+		440249E2242FBB25007221F5 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				440249F7242FBC33007221F5 /* API.swift */,
+				440249F5242FBC1F007221F5 /* Config.swift */,
+				440249F3242FBC15007221F5 /* Helper.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		440249E3242FBB2C007221F5 /* Utilites */ = {
+			isa = PBXGroup;
+			children = (
+				440249D8242FB904007221F5 /* Info.plist */,
+				440249CA242FB902007221F5 /* AppDelegate.swift */,
+				440249CC242FB902007221F5 /* SceneDelegate.swift */,
+			);
+			path = Utilites;
+			sourceTree = "<group>";
+		};
+		440249E4242FBB32007221F5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				440249E6242FBB4B007221F5 /* Assests */,
+				440249E5242FBB44007221F5 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		440249E5242FBB44007221F5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				440249E7242FBB70007221F5 /* Cairo-Black.ttf */,
+				440249EC242FBB70007221F5 /* Cairo-Bold.ttf */,
+				440249E9242FBB70007221F5 /* Cairo-ExtraLight.ttf */,
+				440249E8242FBB70007221F5 /* Cairo-Light.ttf */,
+				440249EA242FBB70007221F5 /* Cairo-Regular.ttf */,
+				440249EB242FBB70007221F5 /* Cairo-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		440249E6242FBB4B007221F5 /* Assests */ = {
+			isa = PBXGroup;
+			children = (
+				440249D3242FB904007221F5 /* Assets.xcassets */,
+			);
+			path = Assests;
+			sourceTree = "<group>";
+		};
+		44024A0D242FC156007221F5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				44024A13242FC1AF007221F5 /* Eissa */,
+				44024A12242FC1A8007221F5 /* Oday */,
+				44024A11242FC199007221F5 /* Gedamy */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		44024A0F242FC164007221F5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				4424C74F2461F790009A35ED /* Gedamy */,
+				44024A1E242FC21C007221F5 /* Eissa */,
+				44024A1D242FC210007221F5 /* Oday */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		44024A10242FC18C007221F5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				44024A15242FC1C6007221F5 /* ViewControllers */,
+				44024A14242FC1B7007221F5 /* XIB */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		44024A11242FC199007221F5 /* Gedamy */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Gedamy;
+			sourceTree = "<group>";
+		};
+		44024A12242FC1A8007221F5 /* Oday */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Oday;
+			sourceTree = "<group>";
+		};
+		44024A13242FC1AF007221F5 /* Eissa */ = {
+			isa = PBXGroup;
+			children = (
+				4485E814243674C9008E0A4D /* Errors.swift */,
+				441B1F562457777D00F18AFF /* AdImages.swift */,
+			);
+			path = Eissa;
+			sourceTree = "<group>";
+		};
+		44024A14242FC1B7007221F5 /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				440249D5242FB904007221F5 /* LaunchScreen.storyboard */,
+				44024A1B242FC1ED007221F5 /* Eissa */,
+				44E848FB2450B60B003652D1 /* Gedamy */,
+				44024A1A242FC1E7007221F5 /* Oday */,
+			);
+			path = XIB;
+			sourceTree = "<group>";
+		};
+		44024A15242FC1C6007221F5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				44024A18242FC1DC007221F5 /* Eissa */,
+				44E848FA2450B5DB003652D1 /* Gedamy */,
+				44024A17242FC1D7007221F5 /* Oday */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		44024A17242FC1D7007221F5 /* Oday */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Oday;
+			sourceTree = "<group>";
+		};
+		44024A18242FC1DC007221F5 /* Eissa */ = {
+			isa = PBXGroup;
+			children = (
+				440CA2162433C5A30041C5EE /* Auth */,
+				44480C672432832500D2DFE8 /* TabBarControllers */,
+				44480C5A243253B800D2DFE8 /* PageControllers */,
+			);
+			path = Eissa;
+			sourceTree = "<group>";
+		};
+		44024A1A242FC1E7007221F5 /* Oday */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Oday;
+			sourceTree = "<group>";
+		};
+		44024A1B242FC1ED007221F5 /* Eissa */ = {
+			isa = PBXGroup;
+			children = (
+				440CA21D2433C64D0041C5EE /* Auth */,
+				44480C682432834900D2DFE8 /* TabBarControllers */,
+				44480C592432537700D2DFE8 /* PageControllers */,
+			);
+			path = Eissa;
+			sourceTree = "<group>";
+		};
+		44024A1D242FC210007221F5 /* Oday */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Oday;
+			sourceTree = "<group>";
+		};
+		44024A1E242FC21C007221F5 /* Eissa */ = {
+			isa = PBXGroup;
+			children = (
+				4485E8182436BF0C008E0A4D /* Auth */,
+			);
+			path = Eissa;
+			sourceTree = "<group>";
+		};
+		440A2B4B2460AAF700EA182C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				440A2B752460ACD100EA182C /* BabySleepTVCell.xib */,
+				440A2B772460ACD500EA182C /* Checks */,
+				440A2B6D2460ACBC00EA182C /* ExtraFoodTVCell.xib */,
+				440A2B6E2460ACBC00EA182C /* FoodTVCell.xib */,
+				440A2B6C2460ACBB00EA182C /* NutritionNeededCVCell.xib */,
+				440A2B6F2460ACBD00EA182C /* PregnancySupplementCVCell.xib */,
+				440A2B6B2460ACBB00EA182C /* SafeTVCell.xib */,
+				4433264A245B7A9900ECE1BB /* ToolsCV.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		440A2B4C2460AB0C00EA182C /* BabyNutrition */ = {
+			isa = PBXGroup;
+			children = (
+				440A2B502460AB7100EA182C /* BabyNutritionVC.xib */,
+				440A2B522460AB8600EA182C /* ChildNutritionGuideVC.xib */,
+			);
+			path = BabyNutrition;
+			sourceTree = "<group>";
+		};
+		440A2B4D2460AB2000EA182C /* BabySleep */ = {
+			isa = PBXGroup;
+			children = (
+				440A2B542460ABB000EA182C /* BabySleepVC.xib */,
+				440A2B562460ABBE00EA182C /* ChildPeriodVC.xib */,
+			);
+			path = BabySleep;
+			sourceTree = "<group>";
+		};
+		440A2B4E2460AB2A00EA182C /* Checks */ = {
+			isa = PBXGroup;
+			children = (
+				440A2B582460ABD100EA182C /* CheckVC.xib */,
+			);
+			path = Checks;
+			sourceTree = "<group>";
+		};
+		440A2B4F2460AB3900EA182C /* PregnantNutrition */ = {
+			isa = PBXGroup;
+			children = (
+				440A2B5E2460AC3700EA182C /* NutritionNeeded */,
+				440A2B5D2460AC1D00EA182C /* FoodRecipies */,
+				440A2B5C2460AC1400EA182C /* ExtraWeight */,
+				440A2B5A2460ABE300EA182C /* PregenantNutritionVC.xib */,
+			);
+			path = PregnantNutrition;
+			sourceTree = "<group>";
+		};
+		440A2B5C2460AC1400EA182C /* ExtraWeight */ = {
+			isa = PBXGroup;
+			children = (
+				440A2B5F2460AC4C00EA182C /* ExtraWeightVC.xib */,
+			);
+			path = ExtraWeight;
+			sourceTree = "<group>";
+		};
+		440A2B5D2460AC1D00EA182C /* FoodRecipies */ = {
+			isa = PBXGroup;
+			children = (
+				440A2B612460AC5E00EA182C /* FoodRecipesVC.xib */,
+				440A2B632460AC6C00EA182C /* GoodFoodVC.xib */,
+			);
+			path = FoodRecipies;
+			sourceTree = "<group>";
+		};
+		440A2B5E2460AC3700EA182C /* NutritionNeeded */ = {
+			isa = PBXGroup;
+			children = (
+				440A2B672460AC8400EA182C /* EatingPrinciplesVC.xib */,
+				440A2B652460AC8300EA182C /* NutritionNeededVC.xib */,
+				440A2B662460AC8300EA182C /* PregnancySupplementVC.xib */,
+			);
+			path = NutritionNeeded;
+			sourceTree = "<group>";
+		};
+		440A2B772460ACD500EA182C /* Checks */ = {
+			isa = PBXGroup;
+			children = (
+				440A2B782460ACE500EA182C /* AllChecksTVCell.xib */,
+				440A2B7A2460ACE600EA182C /* CompletedTVCell.xib */,
+				440A2B792460ACE600EA182C /* RemainedTVCell.xib */,
+			);
+			path = Checks;
+			sourceTree = "<group>";
+		};
+		440A2B7E2460AD3F00EA182C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				440A2B802460AD9C00EA182C /* BabySleepTVCell.swift */,
+				440A2B822460AE1000EA182C /* Checks */,
+				440A2B832460AE2100EA182C /* ExtraFoodTVCell.swift */,
+				440A2B852460AE6400EA182C /* FoodTVCell.swift */,
+				440A2B872460AEB700EA182C /* NutritionNeededCVCell.swift */,
+				440A2B892460AEFA00EA182C /* PregnancySupplementCVCell.swift */,
+				440A2B8B2460AF2A00EA182C /* SafeTVCell.swift */,
+				4433264C245B7AC700ECE1BB /* ToolsCV.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		440A2B7F2460AD4700EA182C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				440A2B962460B01A00EA182C /* PregnantNutrition */,
+				440A2B952460B00A00EA182C /* Check */,
+				440A2B942460B00000EA182C /* BabySleep */,
+				440A2B932460AFF600EA182C /* BabyNutrition */,
+				441781FE245B32F900809624 /* ToolsVC.swift */,
+				440A2B9A2460B06E00EA182C /* PregenantNutritionVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		440A2B822460AE1000EA182C /* Checks */ = {
+			isa = PBXGroup;
+			children = (
+				440A2B8D2460AF6700EA182C /* AllChecksTVCell.swift */,
+				440A2B8F2460AF8A00EA182C /* CompletedTVCell.swift */,
+				440A2B912460AFAE00EA182C /* RemainedTVCell.swift */,
+			);
+			path = Checks;
+			sourceTree = "<group>";
+		};
+		440A2B932460AFF600EA182C /* BabyNutrition */ = {
+			isa = PBXGroup;
+			children = (
+				440A2B9C2460B0A200EA182C /* BabyNutritionVC.swift */,
+				440A2B9E2460B0C600EA182C /* ChildNutritionGuideVC.swift */,
+			);
+			path = BabyNutrition;
+			sourceTree = "<group>";
+		};
+		440A2B942460B00000EA182C /* BabySleep */ = {
+			isa = PBXGroup;
+			children = (
+				440A2BA02460B0F800EA182C /* BabySleepVC.swift */,
+				440A2BA22460B12000EA182C /* ChildPeriodVC.swift */,
+			);
+			path = BabySleep;
+			sourceTree = "<group>";
+		};
+		440A2B952460B00A00EA182C /* Check */ = {
+			isa = PBXGroup;
+			children = (
+				440A2BA42460B14A00EA182C /* CheckVC.swift */,
+			);
+			path = Check;
+			sourceTree = "<group>";
+		};
+		440A2B962460B01A00EA182C /* PregnantNutrition */ = {
+			isa = PBXGroup;
+			children = (
+				440A2B992460B04A00EA182C /* NutritionNeeded */,
+				440A2B982460B03600EA182C /* FoodRecipes */,
+				440A2B972460B02500EA182C /* ExtraWeight */,
+			);
+			path = PregnantNutrition;
+			sourceTree = "<group>";
+		};
+		440A2B972460B02500EA182C /* ExtraWeight */ = {
+			isa = PBXGroup;
+			children = (
+				440A2BA62460B17F00EA182C /* ExtraWeightVC.swift */,
+			);
+			path = ExtraWeight;
+			sourceTree = "<group>";
+		};
+		440A2B982460B03600EA182C /* FoodRecipes */ = {
+			isa = PBXGroup;
+			children = (
+				440A2BA82460B1A700EA182C /* FoodRecipesVC.swift */,
+				440A2BAA2460B1CD00EA182C /* GoodFoodVC.swift */,
+			);
+			path = FoodRecipes;
+			sourceTree = "<group>";
+		};
+		440A2B992460B04A00EA182C /* NutritionNeeded */ = {
+			isa = PBXGroup;
+			children = (
+				440A2BAC2460B1F400EA182C /* EatingPrinciplesVC.swift */,
+				440A2BAE2460B21600EA182C /* NutritionNeededVC.swift */,
+				440A2BB02460B23B00EA182C /* PregnancySupplementVC.swift */,
+			);
+			path = NutritionNeeded;
+			sourceTree = "<group>";
+		};
+		440CA2162433C5A30041C5EE /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				440CA2232433C7800041C5EE /* MotherRegisterVC.swift */,
+				440CA2272433C7BA0041C5EE /* DoctorRegisterVC.swift */,
+				44B8DCB224354A86001528C7 /* LoginVC.swift */,
+				4414BD6F243A6EB20095E7BA /* VerficationCodeVC.swift */,
+				440C07D4243E17BB00A004E3 /* ForgotPasswordVC.swift */,
+				440C07DC243E180D00A004E3 /* SetNewPasswordVC.swift */,
+				440C07D8243E17E800A004E3 /* EnterCodePasswordVC.swift */,
+				443E84D4243E807D00D92471 /* MapVC.swift */,
+				440C827D244CF06300B16CCE /* CompleteRegisterVC.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		440CA21D2433C64D0041C5EE /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				44B8DCB324354A86001528C7 /* LoginVC.xib */,
+				440CA2242433C7800041C5EE /* MotherRegisterVC.xib */,
+				440CA2282433C7BA0041C5EE /* DoctorRegisterVC.xib */,
+				440C07DD243E180D00A004E3 /* SetNewPasswordVC.xib */,
+				4414BD70243A6EB20095E7BA /* VerficationCodeVC.xib */,
+				440C07D5243E17BB00A004E3 /* ForgotPasswordVC.xib */,
+				440C07D9243E17E800A004E3 /* EnterCodePasswordVC.xib */,
+				443E84D5243E807D00D92471 /* MapVC.xib */,
+				440C827E244CF06300B16CCE /* CompleteRegisterVC.xib */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		440CA22B2433F69C0041C5EE /* CustomUIViews */ = {
+			isa = PBXGroup;
+			children = (
+				440249F9242FBCCC007221F5 /* CircleView.swift */,
+				4414BD68243A67D40095E7BA /* RoundedViews.swift */,
+				44B5D2D4243FC8EA001D4103 /* RoundedTopView.swift */,
+			);
+			path = CustomUIViews;
+			sourceTree = "<group>";
+		};
+		440CA22C2433F6DA0041C5EE /* CustomTextFields */ = {
+			isa = PBXGroup;
+			children = (
+				440249FB242FBCEE007221F5 /* CustomTextFields.swift */,
+			);
+			path = CustomTextFields;
+			sourceTree = "<group>";
+		};
+		440CA22D2433F70D0041C5EE /* CustomLabels */ = {
+			isa = PBXGroup;
+			children = (
+				440249FD242FBD01007221F5 /* CustomLabels.swift */,
+			);
+			path = CustomLabels;
+			sourceTree = "<group>";
+		};
+		440CA22E2433F7160041C5EE /* CustomButtons */ = {
+			isa = PBXGroup;
+			children = (
+				440249FF242FBD13007221F5 /* CustomButtons.swift */,
+				4414BD66243A673A0095E7BA /* RoundedButtons.swift */,
+			);
+			path = CustomButtons;
+			sourceTree = "<group>";
+		};
+		440E09732450CAF700E13DA5 /* PhotoAlbum */ = {
+			isa = PBXGroup;
+			children = (
+				44480C7A2432A47500D2DFE8 /* PhotoAlbumVC.xib */,
+				440E09752450CB4400E13DA5 /* PhotoAlbumCell.xib */,
+				44442736245341EF00B8DDAD /* AddPhotoVCViewController.xib */,
+				4444273A2453423500B8DDAD /* MyPhotosVC.xib */,
+				44DE519C245493BB0074656D /* MyPhotosCell.xib */,
+				441312ED2454D62800432596 /* ShowImageVC.xib */,
+				4427EEC8245634B8007E6A2D /* AddPhotoCell.xib */,
+			);
+			path = PhotoAlbum;
+			sourceTree = "<group>";
+		};
+		440E09782450CB5400E13DA5 /* PhotoAlbum */ = {
+			isa = PBXGroup;
+			children = (
+				44480C792432A47500D2DFE8 /* PhotoAlbumVC.swift */,
+				440E09742450CB4400E13DA5 /* PhotoAlbumCell.swift */,
+				444427392453423500B8DDAD /* MyPhotosVC.swift */,
+				44442735245341EF00B8DDAD /* AddPhotoVCViewController.swift */,
+				44DE519B245493BB0074656D /* MyPhotosCell.swift */,
+				441312EC2454D62800432596 /* ShowImageVC.swift */,
+				4427EEC7245634B8007E6A2D /* AddPhotoCell.swift */,
+			);
+			path = PhotoAlbum;
+			sourceTree = "<group>";
+		};
+		4414BD6A243A68180095E7BA /* CustomImageViews */ = {
+			isa = PBXGroup;
+			children = (
+				4414BD6B243A683C0095E7BA /* RoundedImage.swift */,
+				4414BD6D243A685F0095E7BA /* CircleImage.swift */,
+			);
+			path = CustomImageViews;
+			sourceTree = "<group>";
+		};
+		4424C74F2461F790009A35ED /* Gedamy */ = {
+			isa = PBXGroup;
+			children = (
+				4424C7502461F7A8009A35ED /* UpdateDoctorProfile.swift */,
+				4424C7582461F8AD009A35ED /* PregnancySupplementPresenter.swift */,
+				4424C75E2461F9CF009A35ED /* ToolsPresenter.swift */,
+				4424C7642461FC94009A35ED /* NutritionNeddedVCPresenter.swift */,
+			);
+			path = Gedamy;
+			sourceTree = "<group>";
+		};
+		44332644245B793C00ECE1BB /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				440A2B7F2460AD4700EA182C /* Controllers */,
+				440A2B7E2460AD3F00EA182C /* Cells */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		44332645245B7A0C00ECE1BB /* Gedamy */ = {
+			isa = PBXGroup;
+			children = (
+				440A2BB22460B37F00EA182C /* AllChecksVC+Extensions.swift */,
+				440A2BB42460B3A400EA182C /* BabyNutrion+Extension.swift */,
+				440A2BB62460B3C500EA182C /* BabySleep+Extension.swift */,
+				440A2BB82460B3E700EA182C /* EatingPriciples+Extensions.swift */,
+				440A2BBA2460B40800EA182C /* ExtraWeight+Extension.swift */,
+				440A2BBC2460B42900EA182C /* FoodRecipes+Extension.swift */,
+				440A2BC42460B58E00EA182C /* PregnancySupplementVC+Extensions.swift */,
+				440A2BC62460B5B500EA182C /* PregnantNutrition+Extensions.swift */,
+				44332646245B7A1F00ECE1BB /* ToolsVC+Extensions.swift */,
+				4424C7472461F5A3009A35ED /* ViewController + Extension.swift */,
+				4424C7492461F643009A35ED /* UITableView.swift */,
+				4424C74B2461F66B009A35ED /* UITapGesureRecognizer.swift */,
+				4424C74D2461F68A009A35ED /* UICollectionVIew.swift */,
+				4424C7622461FC68009A35ED /* NutritionNeeded+Extensions.swift */,
+				449F32B824673EA500054095 /* MedicalGuide+Extension.swift */,
+				449F33162467462100054095 /* DrProfile.swift */,
+				449F331C246746AD00054095 /* WorkDatesVC+PickerView.swift */,
+				449F33202467471800054095 /* WorkDate.swift */,
+				035F8D89246FE91600CE553E /* SaveDrDetailsVC+Extension.swift */,
+				039E4A01247023BC0085B5AD /* SavedImages+Extension.swift */,
+			);
+			path = Gedamy;
+			sourceTree = "<group>";
+		};
+		44332649245B7A6200ECE1BB /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				4424C7662461FF1B009A35ED /* ToolsVC.xib */,
+				440A2B4F2460AB3900EA182C /* PregnantNutrition */,
+				440A2B4E2460AB2A00EA182C /* Checks */,
+				440A2B4D2460AB2000EA182C /* BabySleep */,
+				440A2B4C2460AB0C00EA182C /* BabyNutrition */,
+				440A2B4B2460AAF700EA182C /* Cells */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		44480C592432537700D2DFE8 /* PageControllers */ = {
+			isa = PBXGroup;
+			children = (
+				44024A20242FC276007221F5 /* StartVC.xib */,
+				44480C5C24326B5800D2DFE8 /* SecondPC.xib */,
+				44480C602432714D00D2DFE8 /* ThirdPC.xib */,
+				44480C642432735200D2DFE8 /* LastPC.xib */,
+				445C19AE243926260012B1C3 /* PagerController.xib */,
+			);
+			path = PageControllers;
+			sourceTree = "<group>";
+		};
+		44480C5A243253B800D2DFE8 /* PageControllers */ = {
+			isa = PBXGroup;
+			children = (
+				44024A1F242FC276007221F5 /* FirstPC.swift */,
+				44480C5B24326B5800D2DFE8 /* SecondPC.swift */,
+				44480C5F2432714D00D2DFE8 /* ThirdPC.swift */,
+				44480C632432735200D2DFE8 /* LastPC.swift */,
+				445C19AD243926260012B1C3 /* PagerController.swift */,
+			);
+			path = PageControllers;
+			sourceTree = "<group>";
+		};
+		44480C672432832500D2DFE8 /* TabBarControllers */ = {
+			isa = PBXGroup;
+			children = (
+				440E09782450CB5400E13DA5 /* PhotoAlbum */,
+				446916B62443C30A0078A512 /* Home */,
+			);
+			path = TabBarControllers;
+			sourceTree = "<group>";
+		};
+		44480C682432834900D2DFE8 /* TabBarControllers */ = {
+			isa = PBXGroup;
+			children = (
+				440E09732450CAF700E13DA5 /* PhotoAlbum */,
+				446916B72443C3270078A512 /* Home */,
+			);
+			path = TabBarControllers;
+			sourceTree = "<group>";
+		};
+		446916B62443C30A0078A512 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				44480C752432A42800D2DFE8 /* HomeVC.swift */,
+				446916B22443C2FF0078A512 /* AdvicesHomeCell.swift */,
+				445221D324479B2E00B4316D /* ExaminationsTableCell.swift */,
+				448FE1A1244890D400EB4AAB /* ArticlesCollectionCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		446916B72443C3270078A512 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				44480C762432A42800D2DFE8 /* HomeVC.xib */,
+				446916B32443C2FF0078A512 /* AdvicesHomeCell.xib */,
+				445221D424479B2E00B4316D /* ExaminationsTableCell.xib */,
+				448FE1A2244890D400EB4AAB /* ArticlesCollectionCell.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4485E8182436BF0C008E0A4D /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				4485E81624369768008E0A4D /* UserLoginPresenter.swift */,
+				4485E8192436BF31008E0A4D /* DoctorRegisterPresenter.swift */,
+				4485E81B2436DC80008E0A4D /* MotherRegisterPresenter.swift */,
+				440C07E0243E235200A004E3 /* ForgotPasswordPresenter.swift */,
+				440C07E2243E236E00A004E3 /* EnterCodePasswordPresenter.swift */,
+				440C07E4243E237F00A004E3 /* SetNewPasswordPresenter.swift */,
+				440C8281244D071000B16CCE /* BabyDataPresenter.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		449F329F24673D8C00054095 /* MedicalGuide */ = {
+			isa = PBXGroup;
+			children = (
+				449F32A424673DB000054095 /* Cell */,
+				449F32A124673DA800054095 /* MedicalGuideVC.xib */,
+				449F32A024673DA700054095 /* MoreDetailsVC.xib */,
+			);
+			path = MedicalGuide;
+			sourceTree = "<group>";
+		};
+		449F32A424673DB000054095 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				449F32A624673DC300054095 /* AllOfObjectsCVCell.xib */,
+				449F32A724673DC300054095 /* DoctorsCVCell.xib */,
+				449F32A524673DC200054095 /* MostReadingCVCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		449F32AB24673E2600054095 /* MedicalGuide */ = {
+			isa = PBXGroup;
+			children = (
+				449F32B124673E6700054095 /* Cells */,
+				449F32AC24673E4A00054095 /* Controllers */,
+			);
+			path = MedicalGuide;
+			sourceTree = "<group>";
+		};
+		449F32AC24673E4A00054095 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				449F32AE24673E5F00054095 /* MedicalGuideVC.swift */,
+				449F32AD24673E5F00054095 /* MoreDetailsVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		449F32B124673E6700054095 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				449F32B324673E7E00054095 /* AllOfObjectsCVCell.swift */,
+				449F32B224673E7D00054095 /* DoctorsCVCell.swift */,
+				449F32B424673E7E00054095 /* MostReadingCVCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		449F32BA2467403300054095 /* More */ = {
+			isa = PBXGroup;
+			children = (
+				449F32BC2467404200054095 /* MoreVC.xib */,
+				449F32BB2467404200054095 /* MyBabyVC.xib */,
+				449F32BD2467404300054095 /* MyProfileVC.xib */,
+				449F32BE2467404300054095 /* SavedTVCell.xib */,
+				449F32BF2467404400054095 /* SavedVC.xib */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		449F32C52467405400054095 /* More */ = {
+			isa = PBXGroup;
+			children = (
+				449F32C92467406E00054095 /* MoreVC.swift */,
+				449F32CA2467406F00054095 /* MyBabyVC.swift */,
+				449F32C72467406D00054095 /* MyProfileVC.swift */,
+				449F32C82467406E00054095 /* SavedTVCell.swift */,
+				449F32C62467406D00054095 /* SavedVC.swift */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		449F32D42467414400054095 /* Doctors */ = {
+			isa = PBXGroup;
+			children = (
+				449F330B2467456E00054095 /* DrProfileVC.xib */,
+				449F330C2467456E00054095 /* MoreDrVC.xib */,
+				449F330D2467456F00054095 /* SaveDrDetailsVC.xib */,
+				449F330A2467456D00054095 /* WorkDatesVC.xib */,
+			);
+			path = Doctors;
+			sourceTree = "<group>";
+		};
+		449F32E12467418000054095 /* Doctor */ = {
+			isa = PBXGroup;
+			children = (
+				449F32EF246741EA00054095 /* Protocols */,
+				449F32EE246741DF00054095 /* Controllers */,
+			);
+			path = Doctor;
+			sourceTree = "<group>";
+		};
+		449F32EE246741DF00054095 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				449F3314246745DD00054095 /* DrProfileVC.swift */,
+				449F33182467465500054095 /* MoreDrVC.swift */,
+				449F331A2467468300054095 /* WorkDatesVC.swift */,
+				449F33222467475500054095 /* SaveDrDetailsVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		449F32EF246741EA00054095 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				449F3312246745A500054095 /* DrViewProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		44E848FA2450B5DB003652D1 /* Gedamy */ = {
+			isa = PBXGroup;
+			children = (
+				449F32E4246741AD00054095 /* PregnancyTestVC.swift */,
+				449F32E2246741A000054095 /* ArticlesVC.swift */,
+				449F32D0246740A200054095 /* SettingsVC.swift */,
+				449F3328246761F600054095 /* ChangeLanguageVC.swift */,
+				449F32E12467418000054095 /* Doctor */,
+				449F32C52467405400054095 /* More */,
+				449F32AB24673E2600054095 /* MedicalGuide */,
+				44332644245B793C00ECE1BB /* Tools */,
+			);
+			path = Gedamy;
+			sourceTree = "<group>";
+		};
+		44E848FB2450B60B003652D1 /* Gedamy */ = {
+			isa = PBXGroup;
+			children = (
+				449F32DD2467416400054095 /* ArticlesVC.xib */,
+				449F32DF2467417200054095 /* PregnancyTestVC.xib */,
+				449F32D2246740BD00054095 /* SettingsVC.xib */,
+				449F3329246761F600054095 /* ChangeLanguageVC.xib */,
+				449F32D42467414400054095 /* Doctors */,
+				449F32BA2467403300054095 /* More */,
+				449F329F24673D8C00054095 /* MedicalGuide */,
+				44332649245B7A6200ECE1BB /* Tools */,
+			);
+			path = Gedamy;
+			sourceTree = "<group>";
+		};
+		44F0385B244F8848001BC095 /* Eissa */ = {
+			isa = PBXGroup;
+			children = (
+				445221D124474A6700B4316D /* HomeCollectionView.swift */,
+				445221D72447A8AC00B4316D /* HomeTableView.swift */,
+				440E09792450CD6400E13DA5 /* PhotoAlbumCollectionView.swift */,
+				44DE519F245499B40074656D /* MyPhotoCollection + Extensions.swift */,
+				4427EECB24563827007E6A2D /* AddPhotoCollectionView.swift */,
+			);
+			path = Eissa;
+			sourceTree = "<group>";
+		};
+		6B391B9832E1AFDC95135966 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D743EAD322408C8677E0404C /* Pods_MomCare.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		440249C6242FB902007221F5 /* MomCare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 440249DB242FB904007221F5 /* Build configuration list for PBXNativeTarget "MomCare" */;
+			buildPhases = (
+				8E11235BAFF0C701B625BAA6 /* [CP] Check Pods Manifest.lock */,
+				440249C3242FB902007221F5 /* Sources */,
+				440249C4242FB902007221F5 /* Frameworks */,
+				440249C5242FB902007221F5 /* Resources */,
+				9709E45CE26BE52A5EBAFBD4 /* [CP] Embed Pods Frameworks */,
+				0BE34CF653F7609C7813AD56 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MomCare;
+			productName = MomCare;
+			productReference = 440249C7242FB902007221F5 /* MomCare.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		440249BF242FB902007221F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Eissa;
+				TargetAttributes = {
+					440249C6242FB902007221F5 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 440249C2242FB902007221F5 /* Build configuration list for PBXProject "MomCare" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 440249BE242FB902007221F5;
+			productRefGroup = 440249C8242FB902007221F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				440249C6242FB902007221F5 /* MomCare */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		440249C5242FB902007221F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44480C5E24326B5800D2DFE8 /* SecondPC.xib in Resources */,
+				440A2B5B2460ABE300EA182C /* PregenantNutritionVC.xib in Resources */,
+				440249F1242FBB70007221F5 /* Cairo-SemiBold.ttf in Resources */,
+				440E09772450CB4400E13DA5 /* PhotoAlbumCell.xib in Resources */,
+				4424C7672461FF1B009A35ED /* ToolsVC.xib in Resources */,
+				440249EE242FBB70007221F5 /* Cairo-Light.ttf in Resources */,
+				449F32A924673DC300054095 /* AllOfObjectsCVCell.xib in Resources */,
+				446916B52443C2FF0078A512 /* AdvicesHomeCell.xib in Resources */,
+				445221D624479B2E00B4316D /* ExaminationsTableCell.xib in Resources */,
+				449F33112467456F00054095 /* SaveDrDetailsVC.xib in Resources */,
+				440A2B552460ABB000EA182C /* BabySleepVC.xib in Resources */,
+				440C07DB243E17E800A004E3 /* EnterCodePasswordVC.xib in Resources */,
+				449F32E02467417200054095 /* PregnancyTestVC.xib in Resources */,
+				440A2B7D2460ACE600EA182C /* CompletedTVCell.xib in Resources */,
+				4427EECA245634B8007E6A2D /* AddPhotoCell.xib in Resources */,
+				4444273C2453423500B8DDAD /* MyPhotosVC.xib in Resources */,
+				440C07D7243E17BB00A004E3 /* ForgotPasswordVC.xib in Resources */,
+				448FE1A4244890D400EB4AAB /* ArticlesCollectionCell.xib in Resources */,
+				443E84D7243E807D00D92471 /* MapVC.xib in Resources */,
+				449F32A324673DA800054095 /* MedicalGuideVC.xib in Resources */,
+				440249F0242FBB70007221F5 /* Cairo-Regular.ttf in Resources */,
+				440CA2262433C7800041C5EE /* MotherRegisterVC.xib in Resources */,
+				44480C7C2432A47500D2DFE8 /* PhotoAlbumVC.xib in Resources */,
+				440A2B602460AC4C00EA182C /* ExtraWeightVC.xib in Resources */,
+				449F32A824673DC300054095 /* MostReadingCVCell.xib in Resources */,
+				440C07DF243E180D00A004E3 /* SetNewPasswordVC.xib in Resources */,
+				440A2B742460ACBD00EA182C /* PregnancySupplementCVCell.xib in Resources */,
+				4414BD72243A6EB20095E7BA /* VerficationCodeVC.xib in Resources */,
+				440A2B682460AC8400EA182C /* NutritionNeededVC.xib in Resources */,
+				440A2B7B2460ACE600EA182C /* AllChecksTVCell.xib in Resources */,
+				449F32DE2467416500054095 /* ArticlesVC.xib in Resources */,
+				440A2B7C2460ACE600EA182C /* RemainedTVCell.xib in Resources */,
+				449F33102467456F00054095 /* MoreDrVC.xib in Resources */,
+				440C8280244CF06300B16CCE /* CompleteRegisterVC.xib in Resources */,
+				440249EF242FBB70007221F5 /* Cairo-ExtraLight.ttf in Resources */,
+				440249D7242FB904007221F5 /* LaunchScreen.storyboard in Resources */,
+				440A2B702460ACBD00EA182C /* SafeTVCell.xib in Resources */,
+				440A2B572460ABBE00EA182C /* ChildPeriodVC.xib in Resources */,
+				440A2B712460ACBD00EA182C /* NutritionNeededCVCell.xib in Resources */,
+				445C19B0243926260012B1C3 /* PagerController.xib in Resources */,
+				44B8DCB524354A86001528C7 /* LoginVC.xib in Resources */,
+				44480C782432A42800D2DFE8 /* HomeVC.xib in Resources */,
+				441312EF2454D62800432596 /* ShowImageVC.xib in Resources */,
+				440A2B532460AB8600EA182C /* ChildNutritionGuideVC.xib in Resources */,
+				449F32AA24673DC300054095 /* DoctorsCVCell.xib in Resources */,
+				440A2B512460AB7100EA182C /* BabyNutritionVC.xib in Resources */,
+				449F32C42467404400054095 /* SavedVC.xib in Resources */,
+				449F330E2467456F00054095 /* WorkDatesVC.xib in Resources */,
+				44442738245341EF00B8DDAD /* AddPhotoVCViewController.xib in Resources */,
+				440249D4242FB904007221F5 /* Assets.xcassets in Resources */,
+				440A2B622460AC5F00EA182C /* FoodRecipesVC.xib in Resources */,
+				440249F2242FBB70007221F5 /* Cairo-Bold.ttf in Resources */,
+				449F32C12467404400054095 /* MoreVC.xib in Resources */,
+				44DE519E245493BB0074656D /* MyPhotosCell.xib in Resources */,
+				449F32C22467404400054095 /* MyProfileVC.xib in Resources */,
+				440A2B692460AC8400EA182C /* PregnancySupplementVC.xib in Resources */,
+				440A2B722460ACBD00EA182C /* ExtraFoodTVCell.xib in Resources */,
+				440A2B732460ACBD00EA182C /* FoodTVCell.xib in Resources */,
+				449F32D3246740BD00054095 /* SettingsVC.xib in Resources */,
+				449F330F2467456F00054095 /* DrProfileVC.xib in Resources */,
+				440A2B592460ABD100EA182C /* CheckVC.xib in Resources */,
+				4433264B245B7A9A00ECE1BB /* ToolsCV.xib in Resources */,
+				440A2B6A2460AC8400EA182C /* EatingPrinciplesVC.xib in Resources */,
+				44024A22242FC276007221F5 /* StartVC.xib in Resources */,
+				44480C622432714D00D2DFE8 /* ThirdPC.xib in Resources */,
+				440A2B762460ACD100EA182C /* BabySleepTVCell.xib in Resources */,
+				449F32A224673DA800054095 /* MoreDetailsVC.xib in Resources */,
+				44480C662432735200D2DFE8 /* LastPC.xib in Resources */,
+				449F332B246761F600054095 /* ChangeLanguageVC.xib in Resources */,
+				440A2B642460AC6C00EA182C /* GoodFoodVC.xib in Resources */,
+				440CA22A2433C7BA0041C5EE /* DoctorRegisterVC.xib in Resources */,
+				449F32C32467404400054095 /* SavedTVCell.xib in Resources */,
+				449F32C02467404400054095 /* MyBabyVC.xib in Resources */,
+				440249ED242FBB70007221F5 /* Cairo-Black.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BE34CF653F7609C7813AD56 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MomCare/Pods-MomCare-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MomCare/Pods-MomCare-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MomCare/Pods-MomCare-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E11235BAFF0C701B625BAA6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MomCare-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9709E45CE26BE52A5EBAFBD4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MomCare/Pods-MomCare-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MomCare/Pods-MomCare-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MomCare/Pods-MomCare-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		440249C3242FB902007221F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				449F32AF24673E5F00054095 /* MoreDetailsVC.swift in Sources */,
+				4424C74C2461F66B009A35ED /* UITapGesureRecognizer.swift in Sources */,
+				441312EE2454D62800432596 /* ShowImageVC.swift in Sources */,
+				449F32CE2467406F00054095 /* MoreVC.swift in Sources */,
+				4414BD67243A673A0095E7BA /* RoundedButtons.swift in Sources */,
+				440249CB242FB902007221F5 /* AppDelegate.swift in Sources */,
+				449F32CD2467406F00054095 /* SavedTVCell.swift in Sources */,
+				440249FC242FBCEE007221F5 /* CustomTextFields.swift in Sources */,
+				440A2BA92460B1A700EA182C /* FoodRecipesVC.swift in Sources */,
+				449F33212467471800054095 /* WorkDate.swift in Sources */,
+				44B8DCB424354A86001528C7 /* LoginVC.swift in Sources */,
+				440A2BB32460B37F00EA182C /* AllChecksVC+Extensions.swift in Sources */,
+				4485E815243674C9008E0A4D /* Errors.swift in Sources */,
+				4485E81C2436DC80008E0A4D /* MotherRegisterPresenter.swift in Sources */,
+				44480C652432735200D2DFE8 /* LastPC.swift in Sources */,
+				449F32CF2467406F00054095 /* MyBabyVC.swift in Sources */,
+				44927DF22437FA24001E9A5D /* AppConstans.swift in Sources */,
+				440A2B842460AE2100EA182C /* ExtraFoodTVCell.swift in Sources */,
+				440A2B902460AF8A00EA182C /* CompletedTVCell.swift in Sources */,
+				440A2BA12460B0F800EA182C /* BabySleepVC.swift in Sources */,
+				440A2BC72460B5B500EA182C /* PregnantNutrition+Extensions.swift in Sources */,
+				446916B42443C2FF0078A512 /* AdvicesHomeCell.swift in Sources */,
+				4414BD6E243A685F0095E7BA /* CircleImage.swift in Sources */,
+				449F32B624673E7E00054095 /* AllOfObjectsCVCell.swift in Sources */,
+				440E09762450CB4400E13DA5 /* PhotoAlbumCell.swift in Sources */,
+				4424C7632461FC68009A35ED /* NutritionNeeded+Extensions.swift in Sources */,
+				449F331B2467468300054095 /* WorkDatesVC.swift in Sources */,
+				440CA2292433C7BA0041C5EE /* DoctorRegisterVC.swift in Sources */,
+				44480C822432AF5900D2DFE8 /* CustomTabBar.swift in Sources */,
+				449F331D246746AD00054095 /* WorkDatesVC+PickerView.swift in Sources */,
+				440C07DA243E17E800A004E3 /* EnterCodePasswordVC.swift in Sources */,
+				44442737245341EF00B8DDAD /* AddPhotoVCViewController.swift in Sources */,
+				4485E81A2436BF31008E0A4D /* DoctorRegisterPresenter.swift in Sources */,
+				440A2BBB2460B40800EA182C /* ExtraWeight+Extension.swift in Sources */,
+				44178200245B32F900809624 /* ToolsVC.swift in Sources */,
+				440C07E5243E237F00A004E3 /* SetNewPasswordPresenter.swift in Sources */,
+				449F32E3246741A100054095 /* ArticlesVC.swift in Sources */,
+				44332647245B7A2000ECE1BB /* ToolsVC+Extensions.swift in Sources */,
+				440C07E3243E236E00A004E3 /* EnterCodePasswordPresenter.swift in Sources */,
+				449F3315246745DD00054095 /* DrProfileVC.swift in Sources */,
+				449F32CC2467406F00054095 /* MyProfileVC.swift in Sources */,
+				440A2B9D2460B0A200EA182C /* BabyNutritionVC.swift in Sources */,
+				44DE519D245493BB0074656D /* MyPhotosCell.swift in Sources */,
+				440A2BA52460B14A00EA182C /* CheckVC.swift in Sources */,
+				4424C74E2461F68A009A35ED /* UICollectionVIew.swift in Sources */,
+				440A2BBD2460B42900EA182C /* FoodRecipes+Extension.swift in Sources */,
+				4424C74A2461F643009A35ED /* UITableView.swift in Sources */,
+				440A2BB92460B3E700EA182C /* EatingPriciples+Extensions.swift in Sources */,
+				4433264D245B7AC700ECE1BB /* ToolsCV.swift in Sources */,
+				440C827F244CF06300B16CCE /* CompleteRegisterVC.swift in Sources */,
+				449F32B024673E5F00054095 /* MedicalGuideVC.swift in Sources */,
+				440C07D6243E17BB00A004E3 /* ForgotPasswordVC.swift in Sources */,
+				4485E81724369768008E0A4D /* UserLoginPresenter.swift in Sources */,
+				440249F6242FBC1F007221F5 /* Config.swift in Sources */,
+				449F32B524673E7E00054095 /* DoctorsCVCell.swift in Sources */,
+				440A2BAD2460B1F400EA182C /* EatingPrinciplesVC.swift in Sources */,
+				44DE51A0245499B40074656D /* MyPhotoCollection + Extensions.swift in Sources */,
+				440A2BB72460B3C500EA182C /* BabySleep+Extension.swift in Sources */,
+				4424C7512461F7A8009A35ED /* UpdateDoctorProfile.swift in Sources */,
+				445221D82447A8AC00B4316D /* HomeTableView.swift in Sources */,
+				44024A0A242FBDF4007221F5 /* Localizer.swift in Sources */,
+				440249FE242FBD01007221F5 /* CustomLabels.swift in Sources */,
+				449F32CB2467406F00054095 /* SavedVC.swift in Sources */,
+				440E097A2450CD6400E13DA5 /* PhotoAlbumCollectionView.swift in Sources */,
+				4427EECC24563827007E6A2D /* AddPhotoCollectionView.swift in Sources */,
+				4444273B2453423500B8DDAD /* MyPhotosVC.swift in Sources */,
+				440A2B9B2460B06E00EA182C /* PregenantNutritionVC.swift in Sources */,
+				449F3313246745A500054095 /* DrViewProtocol.swift in Sources */,
+				440A2B922460AFAE00EA182C /* RemainedTVCell.swift in Sources */,
+				4424C7652461FC94009A35ED /* NutritionNeddedVCPresenter.swift in Sources */,
+				440249CD242FB902007221F5 /* SceneDelegate.swift in Sources */,
+				440C07DE243E180D00A004E3 /* SetNewPasswordVC.swift in Sources */,
+				441B1F572457777D00F18AFF /* AdImages.swift in Sources */,
+				449F32B924673EA500054095 /* MedicalGuide+Extension.swift in Sources */,
+				44927DF42437FABB001E9A5D /* StringExtensions.swift in Sources */,
+				44480C612432714D00D2DFE8 /* ThirdPC.swift in Sources */,
+				449F33172467462100054095 /* DrProfile.swift in Sources */,
+				440A2BAB2460B1CD00EA182C /* GoodFoodVC.swift in Sources */,
+				440C07E1243E235200A004E3 /* ForgotPasswordPresenter.swift in Sources */,
+				440A2B8A2460AEFA00EA182C /* PregnancySupplementCVCell.swift in Sources */,
+				449F32B724673E7E00054095 /* MostReadingCVCell.swift in Sources */,
+				440A2BB52460B3A400EA182C /* BabyNutrion+Extension.swift in Sources */,
+				449F32E5246741AD00054095 /* PregnancyTestVC.swift in Sources */,
+				440A2B8C2460AF2A00EA182C /* SafeTVCell.swift in Sources */,
+				449F33232467475500054095 /* SaveDrDetailsVC.swift in Sources */,
+				440A2B862460AE6400EA182C /* FoodTVCell.swift in Sources */,
+				035F8D8A246FE91600CE553E /* SaveDrDetailsVC+Extension.swift in Sources */,
+				445221D224474A6700B4316D /* HomeCollectionView.swift in Sources */,
+				449F332A246761F600054095 /* ChangeLanguageVC.swift in Sources */,
+				440249FA242FBCCC007221F5 /* CircleView.swift in Sources */,
+				44480C5D24326B5800D2DFE8 /* SecondPC.swift in Sources */,
+				039E4A02247023BC0085B5AD /* SavedImages+Extension.swift in Sources */,
+				4414BD71243A6EB20095E7BA /* VerficationCodeVC.swift in Sources */,
+				44024A06242FBDD5007221F5 /* Storyboard.swift in Sources */,
+				443E84D6243E807D00D92471 /* MapVC.swift in Sources */,
+				445221D524479B2E00B4316D /* ExaminationsTableCell.swift in Sources */,
+				440A2BC52460B58E00EA182C /* PregnancySupplementVC+Extensions.swift in Sources */,
+				440CA2252433C7800041C5EE /* MotherRegisterVC.swift in Sources */,
+				440C8282244D071000B16CCE /* BabyDataPresenter.swift in Sources */,
+				4424C75F2461F9CF009A35ED /* ToolsPresenter.swift in Sources */,
+				44024A0C242FBDFE007221F5 /* Extensions.swift in Sources */,
+				4427EEC9245634B8007E6A2D /* AddPhotoCell.swift in Sources */,
+				448FE1A3244890D400EB4AAB /* ArticlesCollectionCell.swift in Sources */,
+				4424C7482461F5A3009A35ED /* ViewController + Extension.swift in Sources */,
+				440A2B882460AEB700EA182C /* NutritionNeededCVCell.swift in Sources */,
+				44480C7B2432A47500D2DFE8 /* PhotoAlbumVC.swift in Sources */,
+				449F33192467465500054095 /* MoreDrVC.swift in Sources */,
+				445C19AF243926260012B1C3 /* PagerController.swift in Sources */,
+				449F32D1246740A200054095 /* SettingsVC.swift in Sources */,
+				44480C772432A42800D2DFE8 /* HomeVC.swift in Sources */,
+				440249F4242FBC15007221F5 /* Helper.swift in Sources */,
+				440A2BAF2460B21600EA182C /* NutritionNeededVC.swift in Sources */,
+				44024A00242FBD13007221F5 /* CustomButtons.swift in Sources */,
+				4414BD6C243A683C0095E7BA /* RoundedImage.swift in Sources */,
+				44024A21242FC276007221F5 /* FirstPC.swift in Sources */,
+				4414BD69243A67D40095E7BA /* RoundedViews.swift in Sources */,
+				4424C7592461F8AD009A35ED /* PregnancySupplementPresenter.swift in Sources */,
+				440A2BB12460B23B00EA182C /* PregnancySupplementVC.swift in Sources */,
+				44927DF02437F138001E9A5D /* Alert.swift in Sources */,
+				440249F8242FBC33007221F5 /* API.swift in Sources */,
+				440A2BA72460B17F00EA182C /* ExtraWeightVC.swift in Sources */,
+				440A2B9F2460B0C600EA182C /* ChildNutritionGuideVC.swift in Sources */,
+				44024A08242FBDE9007221F5 /* Language.swift in Sources */,
+				440A2B8E2460AF6700EA182C /* AllChecksTVCell.swift in Sources */,
+				440A2B812460AD9C00EA182C /* BabySleepTVCell.swift in Sources */,
+				440A2BA32460B12000EA182C /* ChildPeriodVC.swift in Sources */,
+				44B5D2D5243FC8EA001D4103 /* RoundedTopView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		440249D5242FB904007221F5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				440249D6242FB904007221F5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		440249D9242FB904007221F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		440249DA242FB904007221F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		440249DC242FB904007221F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 740D0BCEA48855023918F735 /* Pods-MomCare.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/MomCare/Utilites/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = aeissa.MomCare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		440249DD242FB904007221F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 970AD9494AFBFEEDFE0F23F9 /* Pods-MomCare.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/MomCare/Utilites/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = aeissa.MomCare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		440249C2242FB902007221F5 /* Build configuration list for PBXProject "MomCare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				440249D9242FB904007221F5 /* Debug */,
+				440249DA242FB904007221F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		440249DB242FB904007221F5 /* Build configuration list for PBXNativeTarget "MomCare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				440249DC242FB904007221F5 /* Debug */,
+				440249DD242FB904007221F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 440249BF242FB902007221F5 /* Project object */;
+}

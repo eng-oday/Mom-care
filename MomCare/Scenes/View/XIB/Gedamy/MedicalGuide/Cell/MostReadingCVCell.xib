@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MostReadingCVCell" id="dc6-pb-v3a" customClass="MostReadingCVCell" customModule="MomCare" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="l0i-JL-eys">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1021040990" translatesAutoresizingMaskIntoConstraints="NO" id="9nw-D8-2V6">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="110"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="110" id="bEH-w0-MSm"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="السفر مع الرضيع" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7xz-TL-XbT">
+                        <rect key="frame" x="0.0" y="110" width="100" height="40"/>
+                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="10"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="7xz-TL-XbT" secondAttribute="trailing" id="2VQ-TQ-Oy3"/>
+                    <constraint firstAttribute="trailing" secondItem="9nw-D8-2V6" secondAttribute="trailing" id="IzX-OE-1hy"/>
+                    <constraint firstItem="7xz-TL-XbT" firstAttribute="leading" secondItem="l0i-JL-eys" secondAttribute="leading" id="KMV-sJ-VBe"/>
+                    <constraint firstItem="9nw-D8-2V6" firstAttribute="top" secondItem="l0i-JL-eys" secondAttribute="top" id="Ota-kD-n7h"/>
+                    <constraint firstItem="9nw-D8-2V6" firstAttribute="leading" secondItem="l0i-JL-eys" secondAttribute="leading" id="ZfS-lN-t5D"/>
+                    <constraint firstAttribute="bottom" secondItem="7xz-TL-XbT" secondAttribute="bottom" id="lnD-Ll-njd"/>
+                    <constraint firstItem="7xz-TL-XbT" firstAttribute="top" secondItem="9nw-D8-2V6" secondAttribute="bottom" id="nlZ-FX-rBp"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="96" height="151"/>
+            <connections>
+                <outlet property="imageProfile" destination="9nw-D8-2V6" id="no0-wD-yxa"/>
+                <outlet property="lable" destination="7xz-TL-XbT" id="CBG-Jn-S5e"/>
+            </connections>
+            <point key="canvasLocation" x="323.1884057971015" y="-25.446428571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="1021040990" width="107" height="107"/>
+    </resources>
+</document>

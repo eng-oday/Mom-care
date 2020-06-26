@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Bold.ttf">
+            <string>Cairo-Bold</string>
+        </array>
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChildNutritionGuideVC" customModule="MomCare" customModuleProvider="target">
+            <connections>
+                <outlet property="backBu" destination="cOj-nt-iFQ" id="P7j-Cg-bKi"/>
+                <outlet property="bootomContentView" destination="afR-Z8-aH6" id="Y4m-LP-SDt"/>
+                <outlet property="titleLbl" destination="RsR-fu-Aix" id="Hks-0r-2dP"/>
+                <outlet property="view" destination="vwj-Oi-I3L" id="0h2-14-ZhT"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="vwj-Oi-I3L">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="650"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HoN-Fe-h5E">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="650"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TkX-DI-jzk">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="650"/>
+                            <subviews>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="A5X-pX-j4k">
+                                    <rect key="frame" x="20" y="364" width="285" height="130"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="130" id="h9E-XQ-Lrz"/>
+                                    </constraints>
+                                    <mutableString key="text">ينصح بشدة اتباعك لنظام غذائي صحي غني بالخضراوات والحبوب أثناء فترة الرضاعة الطبيعية، وذلك حفاظاً على صحتك ولضمان نمو طفلك وتطوره بشكل سليم. ومع ذلك، فإن الواقع هو أن الحمل قد يتسبب في نقص التغذية بالنسبة للأمهات الجديدة. والحقيقة الثانية أنه ومع وجود طفل جديد في المنزل، فمن الصعب جداً الالتزام بنظام غذائي صحي حيث يمكن أن يستغرق ذلك وقتاً أكثر مما تعتقديه!</mutableString>
+                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                </textView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الأطعمة الواجب تجنبها أثناء فترة الرضاعة الطبيعية" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RwG-MB-co3">
+                                    <rect key="frame" x="0.0" y="90" width="302" height="64"/>
+                                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                    <size key="shadowOffset" width="0.0" height="0.0"/>
+                                </label>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ihz-Al-lb9">
+                                    <rect key="frame" x="20" y="164" width="285" height="130"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="130" id="6OV-JJ-qFB"/>
+                                    </constraints>
+                                    <mutableString key="text">تذكري: ما تأكلينه وتشربينه من الممكن أن ينتقل إلى طفلك عن طريق حليب الثدي. في حين أن بعض القواعد المتعلقة بالتغذية تعتبر أكثر صرامة خلال فترة الحمل، فهناك بعض النصائح لإرشادك أثناء فترة الرضاعة الطبيعية.
+
+الأطعمة والمشروبات التي يتعين تجنبها أثناء فترة الرضاعة الطبيعية
+
+الكافيين: حاولي التقليل من تناولك اليومي للقهوة أو المشروبات الأخرى التي تحتوي على الكافيين (حتى 2-3 كوب يوميا). ففي حال تناول تلك المشروبات بكثرة، فإن ذلك سيجعل الطفل مضطرب أو لا ينام جيدا.
+الكحول: يجب الامتناع عن تناول الكحول خلال فترة الرضاعة الطبيعية.
+تناول كميات كبيرة من الأغذية المصنعة: التقليل من الأطعمة المعبئة والمعلبة والمُصنعة المتوافرة في السوبر ماركت والأغذية والوجبات السريعة التي يكون بها كميات كبيرة من الصوديوم والسكريات
+</mutableString>
+                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                </textView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="whv-bP-PT7">
+                                    <rect key="frame" x="0.0" y="-3" width="320" height="50"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Child nutrition guide" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RsR-fu-Aix">
+                                            <rect key="frame" x="45" y="9" width="230" height="32"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="230" id="Uha-Qx-u1w"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOj-nt-iFQ">
+                                            <rect key="frame" x="15" y="17.5" width="20" height="15"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="20" id="IeE-RY-BDI"/>
+                                                <constraint firstAttribute="height" constant="15" id="oeR-Sy-7pt"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="backBuTapped:" destination="-1" eventType="touchUpInside" id="WgX-cY-4BD"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.08226777957851869" green="0.66459693897296723" blue="0.74898873731218274" alpha="0.60219927226027403" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <constraints>
+                                        <constraint firstItem="RsR-fu-Aix" firstAttribute="centerX" secondItem="whv-bP-PT7" secondAttribute="centerX" id="Hci-VX-Qc4"/>
+                                        <constraint firstAttribute="height" constant="50" id="PHs-Z7-yWQ"/>
+                                        <constraint firstItem="RsR-fu-Aix" firstAttribute="centerY" secondItem="whv-bP-PT7" secondAttribute="centerY" id="WTi-Ks-Uqo"/>
+                                        <constraint firstItem="cOj-nt-iFQ" firstAttribute="leading" secondItem="whv-bP-PT7" secondAttribute="leading" constant="15" id="YAb-Ns-bHU"/>
+                                        <constraint firstItem="cOj-nt-iFQ" firstAttribute="centerY" secondItem="RsR-fu-Aix" secondAttribute="centerY" id="dia-Hb-Hzy"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="فيتامينات الرضاعة الطبيعية" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ogq-si-Hs4">
+                                    <rect key="frame" x="0.0" y="317" width="302" height="32"/>
+                                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstItem="Ogq-si-Hs4" firstAttribute="leading" secondItem="RwG-MB-co3" secondAttribute="leading" id="68J-6c-pdO"/>
+                                <constraint firstItem="A5X-pX-j4k" firstAttribute="trailing" secondItem="ihz-Al-lb9" secondAttribute="trailing" id="8TX-Dg-fRN"/>
+                                <constraint firstItem="RwG-MB-co3" firstAttribute="leading" secondItem="TkX-DI-jzk" secondAttribute="leading" id="Hi3-VQ-6Ux"/>
+                                <constraint firstItem="whv-bP-PT7" firstAttribute="top" secondItem="TkX-DI-jzk" secondAttribute="top" constant="-3" id="J6w-NZ-lds"/>
+                                <constraint firstItem="Ogq-si-Hs4" firstAttribute="top" secondItem="ihz-Al-lb9" secondAttribute="bottom" constant="23" id="RDl-xf-Mf1"/>
+                                <constraint firstAttribute="height" constant="650" id="SX6-eS-JAJ"/>
+                                <constraint firstItem="RwG-MB-co3" firstAttribute="top" secondItem="TkX-DI-jzk" secondAttribute="top" constant="90" id="Zw3-rG-Xgn"/>
+                                <constraint firstItem="Ogq-si-Hs4" firstAttribute="trailing" secondItem="RwG-MB-co3" secondAttribute="trailing" id="c5K-lU-eQu"/>
+                                <constraint firstAttribute="trailing" secondItem="RwG-MB-co3" secondAttribute="trailing" constant="18" id="dAf-la-Fxr"/>
+                                <constraint firstItem="ihz-Al-lb9" firstAttribute="leading" secondItem="TkX-DI-jzk" secondAttribute="leading" constant="20" id="ewD-cV-jM1"/>
+                                <constraint firstItem="A5X-pX-j4k" firstAttribute="top" secondItem="Ogq-si-Hs4" secondAttribute="bottom" constant="15" id="kbH-t5-rcH"/>
+                                <constraint firstAttribute="trailing" secondItem="whv-bP-PT7" secondAttribute="trailing" id="mX2-0N-iQ1"/>
+                                <constraint firstAttribute="trailing" secondItem="ihz-Al-lb9" secondAttribute="trailing" constant="15" id="naZ-c4-jcR"/>
+                                <constraint firstItem="whv-bP-PT7" firstAttribute="leading" secondItem="TkX-DI-jzk" secondAttribute="leading" id="vb9-Um-of8"/>
+                                <constraint firstItem="ihz-Al-lb9" firstAttribute="top" secondItem="RwG-MB-co3" secondAttribute="bottom" constant="10" id="vuQ-El-3ec"/>
+                                <constraint firstItem="A5X-pX-j4k" firstAttribute="leading" secondItem="ihz-Al-lb9" secondAttribute="leading" id="xtd-f4-SHc"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="TkX-DI-jzk" firstAttribute="height" secondItem="HoN-Fe-h5E" secondAttribute="height" priority="250" id="ERe-Xv-arg"/>
+                        <constraint firstItem="TkX-DI-jzk" firstAttribute="top" secondItem="HoN-Fe-h5E" secondAttribute="top" id="QXW-tB-x8H"/>
+                        <constraint firstItem="TkX-DI-jzk" firstAttribute="width" secondItem="HoN-Fe-h5E" secondAttribute="width" id="aR2-Fg-ctd"/>
+                        <constraint firstAttribute="bottom" secondItem="TkX-DI-jzk" secondAttribute="bottom" id="iOz-Uq-6fq"/>
+                        <constraint firstAttribute="trailing" secondItem="TkX-DI-jzk" secondAttribute="trailing" id="pQm-Wq-yo7"/>
+                        <constraint firstItem="TkX-DI-jzk" firstAttribute="leading" secondItem="HoN-Fe-h5E" secondAttribute="leading" id="zZz-QI-EJC"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="A2m-IA-6tH"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="VLG-6l-ws0"/>
+                </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="afR-Z8-aH6">
+                    <rect key="frame" x="0.0" y="620" width="320" height="30"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hv4-Ds-E6m">
+                            <rect key="frame" x="240" y="5" width="50" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="ZKn-sz-dn6"/>
+                                <constraint firstAttribute="width" constant="50" id="m2f-hY-cIj"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="tintColor" red="0.084611060720000006" green="0.676601813" blue="0.75561151650000002" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="68" maxX="50" maxY="0.0"/>
+                            <state key="normal" title="More" image="correct-3">
+                                <color key="titleColor" red="0.084611060720000006" green="0.676601813" blue="0.75561151650000002" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                            <connections>
+                                <action selector="donebuTapped:" destination="-1" eventType="touchUpInside" id="dEh-fd-NZ8"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EjR-qL-t1I">
+                            <rect key="frame" x="20" y="5" width="51" height="25"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="tintColor" red="0.084611060720000006" green="0.676601813" blue="0.75561151650000002" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                            <state key="normal" image="square.and.arrow.down" catalog="system">
+                                <color key="titleColor" red="0.084611060720000006" green="0.676601813" blue="0.75561151650000002" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                            <connections>
+                                <action selector="saveBuTapped:" destination="-1" eventType="touchUpInside" id="dt0-7e-u0c"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="EjR-qL-t1I" firstAttribute="width" secondItem="Hv4-Ds-E6m" secondAttribute="width" multiplier="1.02222" id="2qn-J5-IIa"/>
+                        <constraint firstAttribute="height" constant="30" id="9FL-Aw-olA"/>
+                        <constraint firstAttribute="trailing" secondItem="Hv4-Ds-E6m" secondAttribute="trailing" constant="30" id="Rz5-2d-qkr"/>
+                        <constraint firstItem="EjR-qL-t1I" firstAttribute="leading" secondItem="afR-Z8-aH6" secondAttribute="leading" constant="20" id="Zmu-bC-2UC"/>
+                        <constraint firstItem="EjR-qL-t1I" firstAttribute="height" secondItem="Hv4-Ds-E6m" secondAttribute="height" id="dKG-N0-9kG"/>
+                        <constraint firstItem="EjR-qL-t1I" firstAttribute="centerY" secondItem="Hv4-Ds-E6m" secondAttribute="centerY" id="h3F-6M-PtD"/>
+                        <constraint firstAttribute="bottom" secondItem="Hv4-Ds-E6m" secondAttribute="bottom" id="v8R-CN-O1q"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="NbQ-0k-qXy" firstAttribute="trailing" secondItem="HoN-Fe-h5E" secondAttribute="trailing" id="CLK-2I-3rH"/>
+                <constraint firstItem="NbQ-0k-qXy" firstAttribute="bottom" secondItem="afR-Z8-aH6" secondAttribute="bottom" id="FnW-DY-geo"/>
+                <constraint firstItem="NbQ-0k-qXy" firstAttribute="bottom" secondItem="HoN-Fe-h5E" secondAttribute="bottom" id="HVU-O5-rOo"/>
+                <constraint firstItem="afR-Z8-aH6" firstAttribute="centerX" secondItem="vwj-Oi-I3L" secondAttribute="centerX" id="S5s-gy-Qav"/>
+                <constraint firstItem="HoN-Fe-h5E" firstAttribute="leading" secondItem="NbQ-0k-qXy" secondAttribute="leading" id="eUa-BB-WcY"/>
+                <constraint firstItem="afR-Z8-aH6" firstAttribute="leading" secondItem="NbQ-0k-qXy" secondAttribute="leading" id="kQf-bv-hxj"/>
+                <constraint firstItem="HoN-Fe-h5E" firstAttribute="top" secondItem="NbQ-0k-qXy" secondAttribute="top" id="pLT-7z-zQK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="NbQ-0k-qXy"/>
+            <point key="canvasLocation" x="48.75" y="100.35211267605634"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="correct-3" width="16" height="16"/>
+        <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>
+    </resources>
+</document>

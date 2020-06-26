@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShowImageVC" customModule="MomCare" customModuleProvider="target">
+            <connections>
+                <outlet property="dismissMyView" destination="JNy-WH-EKf" id="LVf-vs-vWq"/>
+                <outlet property="imageShow" destination="Buc-hH-dBh" id="V9o-GF-Qqu"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4bi-zT-Z73">
+                    <rect key="frame" x="0.0" y="-50" width="320" height="50"/>
+                    <color key="backgroundColor" red="0.22352941176470587" green="0.76470588235294112" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="crO-wk-lCK"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JNy-WH-EKf">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="POg-dG-ok1" customClass="RoundedView" customModule="MomCare" customModuleProvider="target">
+                            <rect key="frame" x="10" y="142" width="300" height="284"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Eating-for-a-healthy-pregnancy-resized" translatesAutoresizingMaskIntoConstraints="NO" id="Buc-hH-dBh">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="284"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstItem="Buc-hH-dBh" firstAttribute="leading" secondItem="POg-dG-ok1" secondAttribute="leading" id="5eP-Ic-QfW"/>
+                                <constraint firstAttribute="trailing" secondItem="Buc-hH-dBh" secondAttribute="trailing" id="H89-UK-7Op"/>
+                                <constraint firstItem="Buc-hH-dBh" firstAttribute="top" secondItem="POg-dG-ok1" secondAttribute="top" id="Iow-Y3-6ys"/>
+                                <constraint firstAttribute="bottom" secondItem="Buc-hH-dBh" secondAttribute="bottom" id="yDo-mS-JM8"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRaduis">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="POg-dG-ok1" firstAttribute="centerY" secondItem="JNy-WH-EKf" secondAttribute="centerY" id="E14-1y-KTN"/>
+                        <constraint firstAttribute="trailing" secondItem="POg-dG-ok1" secondAttribute="trailing" constant="10" id="Exe-4r-5dz"/>
+                        <constraint firstItem="POg-dG-ok1" firstAttribute="height" secondItem="JNy-WH-EKf" secondAttribute="height" multiplier="0.5" id="P94-fz-xDk"/>
+                        <constraint firstItem="POg-dG-ok1" firstAttribute="leading" secondItem="JNy-WH-EKf" secondAttribute="leading" constant="10" id="qbZ-eV-3dP"/>
+                        <constraint firstItem="POg-dG-ok1" firstAttribute="centerX" secondItem="JNy-WH-EKf" secondAttribute="centerX" id="xm3-nH-Dgk"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4bi-zT-Z73" secondAttribute="trailing" id="6Or-md-eRN"/>
+                <constraint firstItem="JNy-WH-EKf" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="Mr6-cw-EOG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="leading" secondItem="JNy-WH-EKf" secondAttribute="leading" id="OsA-sQ-cee"/>
+                <constraint firstItem="JNy-WH-EKf" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="Sws-17-Muh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JNy-WH-EKf" secondAttribute="trailing" id="iGp-79-Cq5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="JNy-WH-EKf" secondAttribute="bottom" id="qdK-ba-maF"/>
+                <constraint firstItem="JNy-WH-EKf" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="rPc-BI-LBm"/>
+                <constraint firstItem="4bi-zT-Z73" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="top" id="roC-7H-dgP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="leading" secondItem="4bi-zT-Z73" secondAttribute="leading" id="wnu-wV-o9a"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.25" y="153.16901408450704"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Eating-for-a-healthy-pregnancy-resized" width="160" height="160"/>
+    </resources>
+</document>

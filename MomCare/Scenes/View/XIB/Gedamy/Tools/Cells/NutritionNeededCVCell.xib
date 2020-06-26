@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NutritionNeededCVCell" id="gTV-IL-0wX" customClass="NutritionNeededCVCell" customModule="MomCare" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="115" height="125"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="115" height="125"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="303-eJ-yfO">
+                        <rect key="frame" x="39" y="12" width="37.5" height="37"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="37.5" id="BmQ-5B-r9u"/>
+                            <constraint firstAttribute="height" constant="37" id="rXI-C7-cSX"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pregnancy supplement" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ajv-de-oOq">
+                        <rect key="frame" x="10" y="76.5" width="95" height="33.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.80392156862745101" green="0.36862745098039218" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="Ajv-de-oOq" secondAttribute="bottom" constant="15" id="7iM-8U-FfK"/>
+                <constraint firstItem="Ajv-de-oOq" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="W7a-MZ-pEA"/>
+                <constraint firstItem="303-eJ-yfO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="12" id="YDf-hd-AuQ"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="Ajv-de-oOq" secondAttribute="trailing" constant="10" id="Zsg-E8-qRI"/>
+                <constraint firstItem="Ajv-de-oOq" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="10" id="f2t-Kv-Hbm"/>
+                <constraint firstItem="303-eJ-yfO" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="mGb-l5-CGL"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="115" height="125"/>
+            <connections>
+                <outlet property="nutritionInage" destination="303-eJ-yfO" id="4cX-QF-9rW"/>
+                <outlet property="nutritionTitle" destination="Ajv-de-oOq" id="chf-RB-uSN"/>
+            </connections>
+            <point key="canvasLocation" x="184.78260869565219" y="116.85267857142857"/>
+        </collectionViewCell>
+    </objects>
+</document>

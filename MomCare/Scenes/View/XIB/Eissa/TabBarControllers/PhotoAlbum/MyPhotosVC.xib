@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-SemiBold.ttf">
+            <string>Cairo-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyPhotosVC" customModule="MomCare" customModuleProvider="target">
+            <connections>
+                <outlet property="PhotosCollectionView" destination="FKw-7m-gCp" id="fc0-BG-zk1"/>
+                <outlet property="back" destination="T6H-qU-V81" id="suy-ZL-8Cd"/>
+                <outlet property="titleLabel" destination="MgG-Xt-tDF" id="9i2-Fe-KLt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eSD-2a-4Xm">
+                    <rect key="frame" x="0.0" y="-50" width="320" height="50"/>
+                    <color key="backgroundColor" red="0.22352941176470587" green="0.76470588235294112" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="j3w-gd-bLX"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LGi-QW-C6m">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="first month" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MgG-Xt-tDF">
+                            <rect key="frame" x="112.5" y="6.5" width="95.5" height="37.5"/>
+                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="20"/>
+                            <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T6H-qU-V81">
+                            <rect key="frame" x="20" y="13" width="13.5" height="24"/>
+                            <state key="normal" backgroundImage="arrow_pointt"/>
+                            <connections>
+                                <action selector="backBtn:" destination="-1" eventType="touchUpInside" id="Op4-hl-ovq"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.25882352939999997" green="0.83137254900000002" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="2Z7-99-21m"/>
+                        <constraint firstItem="MgG-Xt-tDF" firstAttribute="centerY" secondItem="LGi-QW-C6m" secondAttribute="centerY" id="axy-Yg-vat"/>
+                        <constraint firstItem="T6H-qU-V81" firstAttribute="leading" secondItem="LGi-QW-C6m" secondAttribute="leading" constant="20" id="fTG-i8-5KI"/>
+                        <constraint firstItem="T6H-qU-V81" firstAttribute="centerY" secondItem="LGi-QW-C6m" secondAttribute="centerY" id="gEp-ye-IfL"/>
+                        <constraint firstItem="MgG-Xt-tDF" firstAttribute="centerX" secondItem="LGi-QW-C6m" secondAttribute="centerX" id="zas-gF-73m"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="FKw-7m-gCp">
+                    <rect key="frame" x="10" y="60" width="300" height="508"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bCh-a2-tye">
+                        <size key="itemSize" width="250" height="250"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="FKw-7m-gCp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="040-8H-1qZ"/>
+                <constraint firstItem="eSD-2a-4Xm" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="top" id="2rg-hH-tZS"/>
+                <constraint firstItem="LGi-QW-C6m" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="MjO-A2-XGT"/>
+                <constraint firstItem="eSD-2a-4Xm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="NWo-iA-LVp"/>
+                <constraint firstItem="LGi-QW-C6m" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="RKk-Q7-Sbo"/>
+                <constraint firstAttribute="trailing" secondItem="FKw-7m-gCp" secondAttribute="trailing" constant="10" id="Wti-Yu-0gv"/>
+                <constraint firstItem="FKw-7m-gCp" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="ael-fV-t2k"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eSD-2a-4Xm" secondAttribute="trailing" id="oQZ-yO-80A"/>
+                <constraint firstItem="FKw-7m-gCp" firstAttribute="top" secondItem="LGi-QW-C6m" secondAttribute="bottom" constant="10" id="qWw-mH-A1B"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LGi-QW-C6m" secondAttribute="trailing" id="xcp-GP-JEe"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.25" y="153.16901408450704"/>
+        </view>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="boi-9K-IAV">
+            <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <state key="normal" title="Button"/>
+            <point key="canvasLocation" x="-69" y="-112"/>
+        </button>
+    </objects>
+    <resources>
+        <image name="arrow_pointt" width="13.5" height="24"/>
+    </resources>
+</document>

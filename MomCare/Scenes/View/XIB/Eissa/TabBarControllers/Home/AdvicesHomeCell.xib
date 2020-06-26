@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-SemiBold.ttf">
+            <string>Cairo-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AdvicesHomeCell" id="gTV-IL-0wX" customClass="AdvicesHomeCell" customModule="MomCare" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ea-7Z-FEb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="danger" translatesAutoresizingMaskIntoConstraints="NO" id="WD5-or-MLU">
+                                <rect key="frame" x="20" y="25" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="WkU-pv-brA"/>
+                                    <constraint firstAttribute="height" constant="30" id="cgL-b1-UW1"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Advice on the first day" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xbb-Qr-mWC">
+                                <rect key="frame" x="60" y="20" width="520" height="32"/>
+                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fourteenth week" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bg3-R8-aNz">
+                                <rect key="frame" x="60" y="52" width="520" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wK8-9z-FeF">
+                                <rect key="frame" x="0.0" y="73" width="600" height="74"/>
+                                <string key="text">In this week of pregnancy, you start enjoying it, as everyone notices your bloated stomach. We advise you to wear clothes for pregnant women.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.25882352939999997" green="0.83137254900000002" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="bg3-R8-aNz" firstAttribute="trailing" secondItem="Xbb-Qr-mWC" secondAttribute="trailing" id="24G-h1-7Yq"/>
+                            <constraint firstItem="wK8-9z-FeF" firstAttribute="leading" secondItem="9Ea-7Z-FEb" secondAttribute="leading" id="6lt-qZ-qfB"/>
+                            <constraint firstItem="wK8-9z-FeF" firstAttribute="top" secondItem="bg3-R8-aNz" secondAttribute="bottom" constant="3" id="9HW-Jk-C7r"/>
+                            <constraint firstItem="WD5-or-MLU" firstAttribute="leading" secondItem="9Ea-7Z-FEb" secondAttribute="leading" constant="20" id="IE6-LP-8hE"/>
+                            <constraint firstItem="Xbb-Qr-mWC" firstAttribute="leading" secondItem="WD5-or-MLU" secondAttribute="trailing" constant="10" id="Nji-6H-1od"/>
+                            <constraint firstItem="bg3-R8-aNz" firstAttribute="top" secondItem="Xbb-Qr-mWC" secondAttribute="bottom" id="SeJ-Aq-AnG"/>
+                            <constraint firstAttribute="bottom" secondItem="wK8-9z-FeF" secondAttribute="bottom" constant="3" id="TUC-uW-pak"/>
+                            <constraint firstItem="bg3-R8-aNz" firstAttribute="leading" secondItem="Xbb-Qr-mWC" secondAttribute="leading" id="UNd-K6-fVp"/>
+                            <constraint firstAttribute="trailing" secondItem="Xbb-Qr-mWC" secondAttribute="trailing" constant="20" id="VHV-dD-0ql"/>
+                            <constraint firstAttribute="trailing" secondItem="wK8-9z-FeF" secondAttribute="trailing" id="WYm-m0-GKI"/>
+                            <constraint firstItem="Xbb-Qr-mWC" firstAttribute="top" secondItem="WD5-or-MLU" secondAttribute="top" constant="-5" id="fYc-Pf-Fap"/>
+                            <constraint firstItem="WD5-or-MLU" firstAttribute="top" secondItem="9Ea-7Z-FEb" secondAttribute="top" constant="25" id="pnw-iN-ZBH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="9Ea-7Z-FEb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="S2S-0k-dhv"/>
+                <constraint firstItem="9Ea-7Z-FEb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bGy-ef-xnt"/>
+                <constraint firstAttribute="trailing" secondItem="9Ea-7Z-FEb" secondAttribute="trailing" id="sk3-tU-UcJ"/>
+                <constraint firstAttribute="bottom" secondItem="9Ea-7Z-FEb" secondAttribute="bottom" id="txd-Le-TEI"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="441" height="186"/>
+            <connections>
+                <outlet property="advicesTextField" destination="wK8-9z-FeF" id="lK3-QW-taN"/>
+                <outlet property="containerView" destination="9Ea-7Z-FEb" id="NZ1-hQ-6HD"/>
+                <outlet property="dayLabel" destination="Xbb-Qr-mWC" id="Am1-jR-6DD"/>
+                <outlet property="image" destination="WD5-or-MLU" id="9x4-j1-dIh"/>
+                <outlet property="weekLabel" destination="bg3-R8-aNz" id="4XC-l1-uFm"/>
+            </connections>
+            <point key="canvasLocation" x="18.75" y="14.788732394366198"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="danger" width="256" height="256"/>
+    </resources>
+</document>

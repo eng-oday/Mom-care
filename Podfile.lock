@@ -1,0 +1,91 @@
+PODS:
+  - ActionSheetPicker-3.0 (2.4.2)
+  - Alamofire (4.9.1)
+  - BEMCheckBox (1.4.1)
+  - CountdownLabel (4.0.1)
+  - DynamicBlurView (4.1.0)
+  - FasterVerificationCode (0.3.0)
+  - GoogleMaps (3.8.0):
+    - GoogleMaps/Maps (= 3.8.0)
+  - GoogleMaps/Base (3.8.0)
+  - GoogleMaps/Maps (3.8.0):
+    - GoogleMaps/Base
+  - GooglePlaces (3.8.0):
+    - GoogleMaps/Base (= 3.8.0)
+  - IQKeyboardManagerSwift (6.0.5)
+  - KWVerificationCodeView (0.3.0)
+  - MBSegmentControll (0.1.1)
+  - MIAlertController (1.3)
+  - NVActivityIndicatorView (4.8.0):
+    - NVActivityIndicatorView/Presenter (= 4.8.0)
+  - NVActivityIndicatorView/Presenter (4.8.0)
+  - PopupDialog (1.1.1):
+    - DynamicBlurView (~> 4.0)
+  - QuickLayout (3.0.0)
+  - SkyFloatingLabelTextField (3.8.0)
+  - SwiftEntryKit (1.2.3):
+    - QuickLayout (= 3.0.0)
+  - SwiftyJSON (4.0.0)
+
+DEPENDENCIES:
+  - ActionSheetPicker-3.0
+  - Alamofire (~> 4.7)
+  - BEMCheckBox
+  - CountdownLabel
+  - FasterVerificationCode
+  - GoogleMaps
+  - GooglePlaces
+  - IQKeyboardManagerSwift (~> 6.0.4)
+  - KWVerificationCodeView (= 0.3.0)
+  - MBSegmentControll
+  - MIAlertController (~> 1.3)
+  - NVActivityIndicatorView
+  - PopupDialog (~> 1.1)
+  - SkyFloatingLabelTextField (~> 3.0)
+  - SwiftEntryKit
+  - SwiftyJSON (~> 4.0.0-alpha.1)
+
+SPEC REPOS:
+  trunk:
+    - ActionSheetPicker-3.0
+    - Alamofire
+    - BEMCheckBox
+    - CountdownLabel
+    - DynamicBlurView
+    - FasterVerificationCode
+    - GoogleMaps
+    - GooglePlaces
+    - IQKeyboardManagerSwift
+    - KWVerificationCodeView
+    - MBSegmentControll
+    - MIAlertController
+    - NVActivityIndicatorView
+    - PopupDialog
+    - QuickLayout
+    - SkyFloatingLabelTextField
+    - SwiftEntryKit
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: 5b62e07b00bd970509cf5ece99cb7447eae5dd0d
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  BEMCheckBox: 5ba6e37ade3d3657b36caecc35c8b75c6c2b1a4e
+  CountdownLabel: c9975e3f329140b5e7d1f45cd63b1300badd1712
+  DynamicBlurView: 58e18fae80bb614e34681a4486870e7d257b62e8
+  FasterVerificationCode: 2d7a4a5a8226fe8aa2d69c3f1dadf56b89e38d00
+  GoogleMaps: 7c8d66d70e4e8c300f43a7219d8fdaad7b325a9a
+  GooglePlaces: d5f70c3e9e427964fdeca1301a665d276ccd8754
+  IQKeyboardManagerSwift: c14eca30f6001457d6ddf25e313f23fb6578c41c
+  KWVerificationCodeView: ad0d493e30d203c45f21f3d7b6a4d2b64be53252
+  MBSegmentControll: 0d7930adfc7c721b02cdbcec7804970befe6a9d9
+  MIAlertController: 39277c0ea540fed8be1aba980ba076a0b49b1c22
+  NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
+  PopupDialog: 720c92befd8bc23c13442254945213db5612f149
+  QuickLayout: 07b45a72b10083fee3f095990cfed1c1e7b27f0a
+  SkyFloatingLabelTextField: 5a338412114808e961fe2d14ea2c5452c8b6e4aa
+  SwiftEntryKit: 340713c2e4a6662c5149629990bf1088bf5f0389
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+
+PODFILE CHECKSUM: 56f3b3f744146c58bcd03bab99589af0fb2373b0
+
+COCOAPODS: 1.9.1

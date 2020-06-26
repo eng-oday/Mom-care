@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-SemiBold.ttf">
+            <string>Cairo-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BabySleepVC" customModule="MomCare" customModuleProvider="target">
+            <connections>
+                <outlet property="babySleepTableView" destination="MTM-A7-Tje" id="NqT-g5-6pp"/>
+                <outlet property="backBu" destination="lU3-Sg-40o" id="IdJ-DK-ecC"/>
+                <outlet property="titleLbl" destination="aPD-wq-j3k" id="4IL-9J-49Q"/>
+                <outlet property="view" destination="PES-7j-2sm" id="mlh-s9-XrO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="PES-7j-2sm">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="650"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6WR-F3-C5Q">
+                    <rect key="frame" x="0.0" y="44" width="320" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPD-wq-j3k">
+                            <rect key="frame" x="160" y="20" width="0.0" height="0.0"/>
+                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
+                            <color key="textColor" red="0.08235294118" green="0.66274509800000003" blue="0.74901960779999999" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lU3-Sg-40o">
+                            <rect key="frame" x="280" y="12.5" width="20" height="15"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="pIc-O5-k3n"/>
+                                <constraint firstAttribute="height" constant="15" id="v0X-Jk-re7"/>
+                            </constraints>
+                            <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" image="right_arrow">
+                                <color key="titleColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="backBuTapped:" destination="-1" eventType="touchUpInside" id="u2s-ja-kLQ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="aPD-wq-j3k" firstAttribute="centerX" secondItem="6WR-F3-C5Q" secondAttribute="centerX" id="5Im-Gq-IDa"/>
+                        <constraint firstItem="lU3-Sg-40o" firstAttribute="centerY" secondItem="aPD-wq-j3k" secondAttribute="centerY" id="AJL-XK-fI2"/>
+                        <constraint firstItem="aPD-wq-j3k" firstAttribute="top" secondItem="6WR-F3-C5Q" secondAttribute="top" constant="20" id="TwC-po-Bu5"/>
+                        <constraint firstAttribute="height" constant="50" id="Yr7-zH-ji1"/>
+                        <constraint firstAttribute="trailing" secondItem="lU3-Sg-40o" secondAttribute="trailing" constant="20" id="riP-R4-orS"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MTM-A7-Tje">
+                    <rect key="frame" x="8" y="102" width="304" height="541"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="DDC-Lt-t7h" firstAttribute="trailing" secondItem="MTM-A7-Tje" secondAttribute="trailing" constant="8" id="Csh-ry-S3I"/>
+                <constraint firstItem="DDC-Lt-t7h" firstAttribute="bottom" secondItem="MTM-A7-Tje" secondAttribute="bottom" constant="7" id="LD7-gw-QYN"/>
+                <constraint firstItem="6WR-F3-C5Q" firstAttribute="top" secondItem="DDC-Lt-t7h" secondAttribute="top" id="QwW-hH-TgM"/>
+                <constraint firstItem="MTM-A7-Tje" firstAttribute="top" secondItem="6WR-F3-C5Q" secondAttribute="bottom" constant="8" id="cfd-Vc-dGe"/>
+                <constraint firstItem="MTM-A7-Tje" firstAttribute="leading" secondItem="DDC-Lt-t7h" secondAttribute="leading" constant="8" id="gDD-gS-Srs"/>
+                <constraint firstItem="6WR-F3-C5Q" firstAttribute="leading" secondItem="DDC-Lt-t7h" secondAttribute="leading" id="jv1-oW-pGP"/>
+                <constraint firstItem="DDC-Lt-t7h" firstAttribute="trailing" secondItem="6WR-F3-C5Q" secondAttribute="trailing" id="z6g-Nc-PEW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="DDC-Lt-t7h"/>
+            <point key="canvasLocation" x="69.565217391304358" y="130.58035714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="right_arrow" width="14" height="24"/>
+    </resources>
+</document>

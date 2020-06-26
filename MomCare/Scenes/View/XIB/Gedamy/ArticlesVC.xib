@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+        <array key="Cairo-SemiBold.ttf">
+            <string>Cairo-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ArticlesVC" customModule="MomCare" customModuleProvider="target">
+            <connections>
+                <outlet property="backBu" destination="bB0-ba-yT3" id="NE0-bC-VjB"/>
+                <outlet property="bottomContentView" destination="Kz9-7y-96V" id="GRR-Dv-Phu"/>
+                <outlet property="view" destination="QOP-Gc-8MO" id="bUT-2c-Ch1"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="QOP-Gc-8MO">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="650"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KyK-52-ReM">
+                    <rect key="frame" x="0.0" y="44" width="320" height="606"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Md8-aO-3bo">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="650"/>
+                            <subviews>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Vbx-YN-nz1">
+                                    <rect key="frame" x="17" y="115.5" width="288" height="250"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="250" id="Stt-Cr-hln"/>
+                                    </constraints>
+                                    <mutableString key="text">تُقدّر مدّة الحمل الطبيعيّة بما يقارب 40 أسبوعاً، أو 9 أشهر، أو 280 يوماً، وقد تختلف طريقة حساب موعد الولادة ومدّة الحمل بناءً على مدى انتظام الدورة الشهريّة من عدمه، نوضح ذلك في ما يلي:[١] في حال انتظام الدورة الشهرية يتمّ في العديد من الحالات حساب فترة الحمل وموعد الولادة من خلال إضافة 40 أسبوعاً منذ اليوم الأول بعد انتهاء دورة الطمث الأخيرة في حال انتظام الدورة الشهريّة، وهنا تجدر الإشارة إلى أنّ الحمل لا يحدث فعليّاً قبل مرحلة الإباضة التي بدورها تحتاج إلى أسبوعين تقريباً بعد آخر يوم من آخر دورة طمث، لذلك فإنّ مدّة الحمل الفعليّة هي 38 أسبوع تقريباً، أمّا في حال القدرة على تحديد موعد الإباضة بشكلٍ دقيق لدى المرأة، أو القدرة على تحديد وقت الجماع الذي أدّى إلى حدوث الحمل فإنّه يتمّ إضافة 38 أسبوعاً من ذلك اليوم لتقدير موعد الولادة ومراحل الحمل المختلفة.[٢] في حال عدم انتظام الدورة الشهرية في حال عدم انتظام الدورة الشهريّة لا يمكن تطبيق القاعدة السابقة لتحديد موعد الولادة وعُمر الحمل، وإنّما يتمّ تحديدها من قِبَل الطبيب عن طريق إجراء بعض الاختبارات التي تساعد على الكشف عن درجة تطوّر ونمو الجنين والذي بدوره يساعد على تحديد العُمر الفعليّ للحمل، ويمكن ذلك من خلال إجراء الطبيب للفحص السريريّ لتحديد موقع الرحم، والتصوير بالموجات فوق الصوتيّة.[١][٣] دقة جدول حساب الحمل تجدر الإشارة إلى أنّ جدول حساب الحمل يساعد على تحديد عُمر الحمل، وموعد الولادة المتوقع فقط، أمّا بالنسبة لموعد الولادة الطبيعيّة الفعليّ فيختلف بناءً على عدّة عوامل، كما أنّ 5% فقط من النساء تلد في الوقت المحدّد بجدول حساب الحمل، ويتراوح موعد الحمل في معظم الحالات بين الأسبوع 37-42 من الحمل
+</mutableString>
+                                    <color key="textColor" red="0.72156862745098038" green="0.72156862745098038" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                </textView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MFz-FU-FJ6">
+                                    <rect key="frame" x="0.0" y="-3" width="320" height="60"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="المقالات" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ac9-5z-wrk">
+                                            <rect key="frame" x="131.5" y="15" width="57.5" height="30"/>
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="16"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bB0-ba-yT3">
+                                            <rect key="frame" x="270" y="20" width="30" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="KbJ-1i-ZTy"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="backBuTapped:" destination="-1" eventType="touchUpInside" id="ync-bc-4Mf"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.25882352941176467" green="0.83137254901960778" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="6sl-L7-qe1"/>
+                                        <constraint firstItem="ac9-5z-wrk" firstAttribute="centerY" secondItem="MFz-FU-FJ6" secondAttribute="centerY" id="Ej0-p5-keD"/>
+                                        <constraint firstItem="ac9-5z-wrk" firstAttribute="centerX" secondItem="MFz-FU-FJ6" secondAttribute="centerX" id="cci-wM-ksd"/>
+                                        <constraint firstAttribute="trailing" secondItem="bB0-ba-yT3" secondAttribute="trailing" constant="20" id="nAo-XN-rsE"/>
+                                        <constraint firstItem="bB0-ba-yT3" firstAttribute="centerY" secondItem="ac9-5z-wrk" secondAttribute="centerY" id="qHd-MT-Fwi"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ماهو جدول الحمل؟" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ct5-bO-dmI">
+                                    <rect key="frame" x="179.5" y="77" width="120.5" height="28.5"/>
+                                    <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                    <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="MFz-FU-FJ6" secondAttribute="trailing" id="2XB-Nk-D6b"/>
+                                <constraint firstItem="MFz-FU-FJ6" firstAttribute="leading" secondItem="Md8-aO-3bo" secondAttribute="leading" id="AIN-00-9VM"/>
+                                <constraint firstItem="ct5-bO-dmI" firstAttribute="top" secondItem="MFz-FU-FJ6" secondAttribute="bottom" constant="20" id="HPW-ZZ-fqK"/>
+                                <constraint firstItem="MFz-FU-FJ6" firstAttribute="top" secondItem="Md8-aO-3bo" secondAttribute="top" constant="-3" id="R2j-Jt-aa0"/>
+                                <constraint firstItem="Vbx-YN-nz1" firstAttribute="top" secondItem="ct5-bO-dmI" secondAttribute="bottom" constant="10" id="TzF-2A-p07"/>
+                                <constraint firstAttribute="height" constant="650" id="cfa-g6-oM8"/>
+                                <constraint firstAttribute="trailing" secondItem="Vbx-YN-nz1" secondAttribute="trailing" constant="15" id="eSy-Uw-txX"/>
+                                <constraint firstItem="Vbx-YN-nz1" firstAttribute="leading" secondItem="Md8-aO-3bo" secondAttribute="leading" constant="17" id="izJ-Py-pCx"/>
+                                <constraint firstAttribute="trailing" secondItem="ct5-bO-dmI" secondAttribute="trailing" constant="20" id="ocN-0A-hKA"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Md8-aO-3bo" firstAttribute="leading" secondItem="KyK-52-ReM" secondAttribute="leading" id="ANG-fI-dOK"/>
+                        <constraint firstItem="Md8-aO-3bo" firstAttribute="width" secondItem="KyK-52-ReM" secondAttribute="width" id="CSd-Vr-rqj"/>
+                        <constraint firstItem="Md8-aO-3bo" firstAttribute="height" secondItem="KyK-52-ReM" secondAttribute="height" priority="250" id="Q2I-Jc-fmN"/>
+                        <constraint firstAttribute="trailing" secondItem="Md8-aO-3bo" secondAttribute="trailing" id="TMT-8d-cj5"/>
+                        <constraint firstAttribute="bottom" secondItem="Md8-aO-3bo" secondAttribute="bottom" id="VEc-Eo-yim"/>
+                        <constraint firstItem="Md8-aO-3bo" firstAttribute="top" secondItem="KyK-52-ReM" secondAttribute="top" id="fuw-My-gpe"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="8ur-nS-SD7"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="gRJ-bf-col"/>
+                </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kz9-7y-96V">
+                    <rect key="frame" x="0.0" y="620" width="320" height="30"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWW-oW-EBd">
+                            <rect key="frame" x="14" y="5" width="46.5" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="dy4-Lc-7Rv"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="tintColor" red="0.084611060720000006" green="0.676601813" blue="0.75561151650000002" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="68" maxX="50" maxY="0.0"/>
+                            <state key="normal" title="More" image="bookmark" catalog="system">
+                                <color key="titleColor" red="0.084611060720000006" green="0.676601813" blue="0.75561151650000002" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                            <connections>
+                                <action selector="donebuTapped:" destination="-1" eventType="touchUpInside" id="cuv-vd-AuG"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="ZWW-oW-EBd" firstAttribute="leading" secondItem="Kz9-7y-96V" secondAttribute="leading" constant="14" id="CMd-tH-Dzl"/>
+                        <constraint firstItem="ZWW-oW-EBd" firstAttribute="centerY" secondItem="Kz9-7y-96V" secondAttribute="centerY" id="RVK-ea-0iT"/>
+                        <constraint firstAttribute="height" constant="30" id="tsR-Xa-eUz"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nW5-gy-Oqr">
+                    <rect key="frame" x="0.0" y="-6" width="320" height="50"/>
+                    <color key="backgroundColor" red="0.22352941176470587" green="0.76470588235294112" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="U53-0T-RX9"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="yXF-MB-7hc" firstAttribute="trailing" secondItem="nW5-gy-Oqr" secondAttribute="trailing" id="6Ps-o2-iKc"/>
+                <constraint firstItem="Kz9-7y-96V" firstAttribute="centerX" secondItem="QOP-Gc-8MO" secondAttribute="centerX" id="DsW-N4-Fc4"/>
+                <constraint firstItem="yXF-MB-7hc" firstAttribute="bottom" secondItem="KyK-52-ReM" secondAttribute="bottom" id="IdF-me-8sJ"/>
+                <constraint firstItem="nW5-gy-Oqr" firstAttribute="leading" secondItem="yXF-MB-7hc" secondAttribute="leading" id="LAl-AO-RHO"/>
+                <constraint firstItem="KyK-52-ReM" firstAttribute="leading" secondItem="yXF-MB-7hc" secondAttribute="leading" id="NRQ-3F-zfA"/>
+                <constraint firstItem="KyK-52-ReM" firstAttribute="top" secondItem="yXF-MB-7hc" secondAttribute="top" id="hEf-bv-4Ga"/>
+                <constraint firstItem="Kz9-7y-96V" firstAttribute="leading" secondItem="yXF-MB-7hc" secondAttribute="leading" id="l4t-Zo-UTh"/>
+                <constraint firstItem="yXF-MB-7hc" firstAttribute="trailing" secondItem="KyK-52-ReM" secondAttribute="trailing" id="vK4-Gr-X2G"/>
+                <constraint firstItem="nW5-gy-Oqr" firstAttribute="bottom" secondItem="KyK-52-ReM" secondAttribute="top" id="wFy-lx-N3v"/>
+                <constraint firstItem="yXF-MB-7hc" firstAttribute="bottom" secondItem="Kz9-7y-96V" secondAttribute="bottom" id="wLy-XG-dVm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="yXF-MB-7hc"/>
+            <point key="canvasLocation" x="47.826086956521742" y="99.776785714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bookmark" catalog="system" width="112" height="128"/>
+    </resources>
+</document>

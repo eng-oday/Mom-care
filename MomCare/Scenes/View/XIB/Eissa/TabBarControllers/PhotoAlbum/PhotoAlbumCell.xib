@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PhotoAlbumCell" customModule="MomCare" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="250" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k1M-86-eNJ">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="200"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GmI-iw-juN" customClass="RoundedView" customModule="MomCare" customModuleProvider="target">
+                                <rect key="frame" x="5" y="5" width="240" height="150"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2018_2_24_14_19_22_952-1" translatesAutoresizingMaskIntoConstraints="NO" id="yjD-QJ-oSq">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="150"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="yjD-QJ-oSq" firstAttribute="top" secondItem="GmI-iw-juN" secondAttribute="top" id="299-DY-uzn"/>
+                                    <constraint firstItem="yjD-QJ-oSq" firstAttribute="width" secondItem="GmI-iw-juN" secondAttribute="width" id="Fpq-IF-noz"/>
+                                    <constraint firstItem="yjD-QJ-oSq" firstAttribute="height" secondItem="GmI-iw-juN" secondAttribute="height" id="ZNX-vu-7OV"/>
+                                    <constraint firstAttribute="trailing" secondItem="yjD-QJ-oSq" secondAttribute="trailing" id="ada-4l-aG8"/>
+                                    <constraint firstAttribute="bottom" secondItem="yjD-QJ-oSq" secondAttribute="bottom" id="cPk-wm-dZJ"/>
+                                    <constraint firstAttribute="height" constant="150" id="gGh-BB-8g0"/>
+                                    <constraint firstItem="yjD-QJ-oSq" firstAttribute="leading" secondItem="GmI-iw-juN" secondAttribute="leading" id="ykM-Br-ErD"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRaduis">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="first month" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFI-Mm-Nhy">
+                                <rect key="frame" x="5" y="165" width="97.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="GmI-iw-juN" firstAttribute="top" secondItem="k1M-86-eNJ" secondAttribute="top" constant="5" id="GZC-oG-1ne"/>
+                            <constraint firstItem="GmI-iw-juN" firstAttribute="leading" secondItem="k1M-86-eNJ" secondAttribute="leading" constant="5" id="JxB-Yy-7bB"/>
+                            <constraint firstItem="gFI-Mm-Nhy" firstAttribute="leading" secondItem="GmI-iw-juN" secondAttribute="leading" id="dg9-7r-XId"/>
+                            <constraint firstItem="gFI-Mm-Nhy" firstAttribute="top" secondItem="GmI-iw-juN" secondAttribute="bottom" constant="10" id="xIq-jg-022"/>
+                            <constraint firstAttribute="trailing" secondItem="GmI-iw-juN" secondAttribute="trailing" constant="5" id="z4G-zr-of6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="k1M-86-eNJ" secondAttribute="trailing" id="GJg-b9-H93"/>
+                <constraint firstItem="k1M-86-eNJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="eIc-rG-8AD"/>
+                <constraint firstAttribute="bottom" secondItem="k1M-86-eNJ" secondAttribute="bottom" id="kQy-LB-Tat"/>
+                <constraint firstItem="k1M-86-eNJ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="pqa-3X-I9n"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="imageCell" destination="yjD-QJ-oSq" id="loa-6a-fQS"/>
+                <outlet property="monthLabel" destination="gFI-Mm-Nhy" id="M9C-H4-Rbc"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="153.34821428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="2018_2_24_14_19_22_952-1" width="160" height="160"/>
+    </resources>
+</document>

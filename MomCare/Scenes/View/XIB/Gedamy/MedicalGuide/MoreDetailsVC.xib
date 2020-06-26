@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MoreDetailsVC" customModule="MomCare" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomView" destination="GMP-Kc-02l" id="y8g-QY-hIo"/>
+                <outlet property="descriptionTxt" destination="WC7-uY-KBy" id="lop-SM-DmN"/>
+                <outlet property="headTitleLbl" destination="StT-EV-Dxi" id="Czp-xR-xDB"/>
+                <outlet property="imgProfile" destination="Kbn-nF-b0n" id="60x-La-zoR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kAY-D1-v5g">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aL8-c1-3lQ">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="650"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="133-022508-postpartum-depression-common-new-parents_700x400" translatesAutoresizingMaskIntoConstraints="NO" id="Kbn-nF-b0n">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="190"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="190" id="ecj-IR-C9t"/>
+                                    </constraints>
+                                </imageView>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="WC7-uY-KBy">
+                                    <rect key="frame" x="0.0" y="234.5" width="320" height="365.5"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <string key="text">لا ينصح بإصطحاب الطفل في رحلة خارج البلاد خلال الشهرين الأول والثاني من عمره، لأن هذه المرحلة يصعب على الأم تنظيم حياتها، وتكرس كل وقتها للطفل.
+
+أما بعد إتمامه ثلاثة أشهر تصبح مناعتهم أقوى، وينتظم نومهم بصورة أفضل، كما تكون الأم قد إستعادت عافيتها وتكيفت مع الوضع الجديد.
+
+أما في حالة السفر بعد الولادة، فقد تفاجأ الأم ببعض الأمور التي لم تضعها في إعتبارها من قبل، ولا تحسن التصرف فيها خلال السفر، فمثلاً يمكن أن تحتاج إلى أخذ الطفل للطبيب الخاص به في حالة طارئة.</string>
+                                    <color key="textColor" red="0.72156862745098038" green="0.72156862745098038" blue="0.72156862745098038" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="13"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                </textView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vNT-72-A7a">
+                                    <rect key="frame" x="290" y="20" width="20" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="20" id="P1d-Pa-dkG"/>
+                                        <constraint firstAttribute="height" constant="20" id="uKv-cM-ku5"/>
+                                    </constraints>
+                                    <state key="normal" image="right_arrow"/>
+                                    <connections>
+                                        <action selector="backBuTapped:" destination="-1" eventType="touchUpInside" id="rKL-Ee-m84"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="السفر مع الرضيع" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="StT-EV-Dxi">
+                                    <rect key="frame" x="219.5" y="207" width="90.5" height="17.5"/>
+                                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="15"/>
+                                    <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstItem="Kbn-nF-b0n" firstAttribute="top" secondItem="aL8-c1-3lQ" secondAttribute="top" id="0Uj-zO-hmu"/>
+                                <constraint firstAttribute="height" constant="650" id="0xg-1y-Wny"/>
+                                <constraint firstAttribute="trailing" secondItem="Kbn-nF-b0n" secondAttribute="trailing" id="2hF-7C-HIA"/>
+                                <constraint firstItem="WC7-uY-KBy" firstAttribute="leading" secondItem="aL8-c1-3lQ" secondAttribute="leading" id="8qf-SY-evX"/>
+                                <constraint firstItem="WC7-uY-KBy" firstAttribute="top" secondItem="StT-EV-Dxi" secondAttribute="bottom" constant="10" id="BiX-cz-zmz"/>
+                                <constraint firstItem="Kbn-nF-b0n" firstAttribute="leading" secondItem="aL8-c1-3lQ" secondAttribute="leading" id="McP-jx-8iH"/>
+                                <constraint firstAttribute="trailing" secondItem="StT-EV-Dxi" secondAttribute="trailing" constant="10" id="Rrx-Cf-Nhl"/>
+                                <constraint firstItem="StT-EV-Dxi" firstAttribute="top" secondItem="Kbn-nF-b0n" secondAttribute="bottom" constant="17" id="T99-ff-31U"/>
+                                <constraint firstItem="vNT-72-A7a" firstAttribute="top" secondItem="aL8-c1-3lQ" secondAttribute="top" constant="20" id="Yjp-br-keJ"/>
+                                <constraint firstAttribute="bottom" secondItem="WC7-uY-KBy" secondAttribute="bottom" constant="50" id="d58-ZK-DpC"/>
+                                <constraint firstAttribute="trailing" secondItem="WC7-uY-KBy" secondAttribute="trailing" id="wem-v3-0dy"/>
+                                <constraint firstItem="vNT-72-A7a" firstAttribute="trailing" secondItem="Kbn-nF-b0n" secondAttribute="trailing" constant="-10" id="wyS-Th-OXb"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="aL8-c1-3lQ" firstAttribute="height" secondItem="kAY-D1-v5g" secondAttribute="height" priority="250" id="CZa-fZ-Pqc"/>
+                        <constraint firstItem="aL8-c1-3lQ" firstAttribute="width" secondItem="kAY-D1-v5g" secondAttribute="width" id="Nvl-CD-WuV"/>
+                        <constraint firstAttribute="trailing" secondItem="aL8-c1-3lQ" secondAttribute="trailing" id="Toc-FB-srk"/>
+                        <constraint firstAttribute="bottom" secondItem="aL8-c1-3lQ" secondAttribute="bottom" id="gas-Ve-CDI"/>
+                        <constraint firstItem="aL8-c1-3lQ" firstAttribute="top" secondItem="kAY-D1-v5g" secondAttribute="top" id="l9G-3m-D6c"/>
+                        <constraint firstItem="aL8-c1-3lQ" firstAttribute="leading" secondItem="kAY-D1-v5g" secondAttribute="leading" id="mLb-9S-PXm"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="V3U-R1-ZzR"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="lFf-1L-4vh"/>
+                </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GMP-Kc-02l">
+                    <rect key="frame" x="0.0" y="528" width="320" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vjo-eN-xyK">
+                            <rect key="frame" x="17" y="10" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="TQK-sh-VpP"/>
+                                <constraint firstAttribute="width" constant="20" id="nWF-DA-nUt"/>
+                            </constraints>
+                            <color key="tintColor" red="0.08235294118" green="0.6705882353" blue="0.75686274509999996" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                            <state key="normal" image="bookmark" catalog="system"/>
+                            <connections>
+                                <action selector="saveOrNotBuTapped:" destination="-1" eventType="touchUpInside" id="WK4-eu-J8d"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="vjo-eN-xyK" firstAttribute="leading" secondItem="GMP-Kc-02l" secondAttribute="leading" constant="17" id="8Pn-X2-e98"/>
+                        <constraint firstItem="vjo-eN-xyK" firstAttribute="centerY" secondItem="GMP-Kc-02l" secondAttribute="centerY" id="Brh-xi-cgb"/>
+                        <constraint firstAttribute="height" constant="40" id="zRr-4L-Sd4"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="kAY-D1-v5g" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="1bC-is-Uut"/>
+                <constraint firstItem="kAY-D1-v5g" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="LQg-9e-O2D"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="GMP-Kc-02l" secondAttribute="bottom" id="e8u-16-z3v"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GMP-Kc-02l" secondAttribute="trailing" id="jV4-Gb-ZOl"/>
+                <constraint firstItem="GMP-Kc-02l" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="kKn-uS-93q"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="kAY-D1-v5g" secondAttribute="bottom" id="t3C-cb-OY2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kAY-D1-v5g" secondAttribute="trailing" id="zqg-il-2NR"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="86.25" y="66.549295774647888"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="133-022508-postpartum-depression-common-new-parents_700x400" width="107" height="107"/>
+        <image name="bookmark" catalog="system" width="112" height="128"/>
+        <image name="right_arrow" width="14" height="24"/>
+    </resources>
+</document>
